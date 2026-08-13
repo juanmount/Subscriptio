@@ -1,0 +1,34 @@
+{
+  "name": "stack-price-engine",
+  "version": "0.1.0",
+  "description": "STACK Price Engine — centralized price collection, change detection, and API for subscription catalogs",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "seed": "tsx src/scripts/seed.ts",
+    "seed:streaming": "tsx src/scripts/seed-streaming-video.ts",
+    "seed:multi-market": "tsx src/scripts/seed-multi-market.ts",
+    "collect": "tsx src/scripts/run-collectors.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.0",
+    "@supabase/supabase-js": "^2.45.0",
+    "@types/ws": "^8.18.1",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.5",
+    "hono": "^4.6.0",
+    "node-cron": "^3.0.3",
+    "ws": "^8.21.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/node-cron": "^3.0.11",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}

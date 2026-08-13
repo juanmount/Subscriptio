@@ -1,0 +1,4906 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_version": "2026-08-06-initial-audit",
+  "generated_at": "2026-08-06",
+  "currency_policy": "Reference prices exclude taxes unless stated; user must confirm final amount.",
+  "services": [
+    {
+      "id": "chatgpt",
+      "provider": "OpenAI",
+      "service_name": "ChatGPT",
+      "category": "IA y desarrollo",
+      "subcategory": "Asistente de IA",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Go",
+          "amount": 8,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Precio de referencia; OpenAI aplica precios localizados en algunos mercados.",
+          "included": null
+        },
+        {
+          "name": "Plus",
+          "amount": 20,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Pro",
+          "amount": 200,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://openai.com/chatgpt/pricing/",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "Business y Enterprise deben confirmarse por usuario, modalidad de facturación y región.",
+      "aliases": [
+        "Open AI ChatGPT",
+        "Chat GPT"
+      ],
+      "priority": "P1"
+    },
+    {
+      "id": "claude",
+      "provider": "Anthropic",
+      "service_name": "Claude",
+      "category": "IA y desarrollo",
+      "subcategory": "Asistente de IA",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Pro",
+          "amount": 20,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Pro anual",
+          "amount": 200,
+          "currency": "USD",
+          "period": "year",
+          "per_user": false,
+          "billed": "annual",
+          "note": "Equivale a aprox. USD 17/mes.",
+          "included": null
+        },
+        {
+          "name": "Max 5x",
+          "amount": 100,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Max 20x",
+          "amount": 200,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Team Standard",
+          "amount": 25,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Team Standard anual",
+          "amount": 20,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Team Premium",
+          "amount": 125,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Team Premium anual",
+          "amount": 100,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://claude.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [
+        "Anthropic Claude"
+      ],
+      "priority": "P1"
+    },
+    {
+      "id": "google-ai-pro",
+      "provider": "Google",
+      "service_name": "Google AI Pro / Gemini",
+      "category": "IA y desarrollo",
+      "subcategory": "Asistente de IA",
+      "billing_model": "localized_subscription",
+      "plans": [
+        {
+          "name": "Google AI Pro",
+          "amount": 19.99,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://one.google.com/about/google-ai-plans/",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_reference",
+      "user_confirmation_required": true,
+      "regions": "price_varies_by_country",
+      "notes": "El precio y los impuestos pueden variar por país. No asumir que Google AI Ultra tiene el mismo precio global.",
+      "aliases": [
+        "Gemini Advanced",
+        "Google One AI Premium"
+      ],
+      "priority": "P1"
+    },
+    {
+      "id": "perplexity",
+      "provider": "Perplexity",
+      "service_name": "Perplexity",
+      "category": "IA y desarrollo",
+      "subcategory": "Buscador y asistente de IA",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        {
+          "name": "Pro anual (equivalente mensual)",
+          "amount": 17,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "annual",
+          "note": "Referencia oficial expresada como equivalente mensual.",
+          "included": null
+        },
+        {
+          "name": "Enterprise Pro",
+          "amount": 40,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Enterprise Pro anual",
+          "amount": 400,
+          "currency": "USD",
+          "period": "year",
+          "per_user": true,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Max anual (equivalente mensual)",
+          "amount": 167,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.perplexity.ai/pro",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_reference",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "grok",
+      "provider": "xAI / X",
+      "service_name": "Grok / SuperGrok",
+      "category": "IA y desarrollo",
+      "subcategory": "Asistente de IA",
+      "billing_model": "hybrid_subscription",
+      "plans": [
+        {
+          "name": "SuperGrok",
+          "amount": 30,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "X Premium Basic",
+          "amount": 3,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "X Premium",
+          "amount": 8,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "X Premium+",
+          "amount": 40,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "X Premium Basic anual",
+          "amount": 32,
+          "currency": "USD",
+          "period": "year",
+          "per_user": false,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "X Premium anual",
+          "amount": 84,
+          "currency": "USD",
+          "period": "year",
+          "per_user": false,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "X Premium+ anual",
+          "amount": 395,
+          "currency": "USD",
+          "period": "year",
+          "per_user": false,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://help.x.com/en/using-x/x-premium",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "La disponibilidad de Grok puede depender del plan de X o de SuperGrok.",
+      "aliases": [
+        "xAI Grok",
+        "X Premium"
+      ],
+      "priority": "P1"
+    },
+    {
+      "id": "github-copilot",
+      "provider": "GitHub",
+      "service_name": "GitHub Copilot",
+      "category": "IA y desarrollo",
+      "subcategory": "Código con IA",
+      "billing_model": "hybrid_subscription_credits",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Pro",
+          "amount": 10,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "USD 15 en créditos mensuales totales"
+        },
+        {
+          "name": "Pro+",
+          "amount": 39,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "USD 70 en créditos mensuales totales"
+        },
+        {
+          "name": "Max",
+          "amount": 100,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "USD 200 en créditos mensuales totales"
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://github.com/features/copilot/plans",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [
+        "Copilot"
+      ],
+      "priority": "P1"
+    },
+    {
+      "id": "cursor",
+      "provider": "Anysphere",
+      "service_name": "Cursor",
+      "category": "IA y desarrollo",
+      "subcategory": "Código con IA",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        {
+          "name": "Hobby",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Pro",
+          "amount": 20,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Teams",
+          "amount": 40,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://cursor.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_reference",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "Pro+ y Ultra deben confirmarse en la página oficial si se ofrecen al usuario; el catálogo inicial no debe inferir importes.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "windsurf",
+      "provider": "Cognition",
+      "service_name": "Windsurf",
+      "category": "IA y desarrollo",
+      "subcategory": "Código con IA",
+      "billing_model": "quota_subscription",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Pro",
+          "amount": 20,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Max",
+          "amount": 200,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Team",
+          "amount": 80,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Enterprise",
+          "amount": null,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Cotización",
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://windsurf.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "Los planes 2026 usan cuotas en lugar del esquema anterior de créditos.",
+      "aliases": [
+        "Codeium Windsurf"
+      ],
+      "priority": "P1"
+    },
+    {
+      "id": "replit",
+      "provider": "Replit",
+      "service_name": "Replit",
+      "category": "IA y desarrollo",
+      "subcategory": "Código y hosting con IA",
+      "billing_model": "hybrid_subscription_credits",
+      "plans": [
+        {
+          "name": "Starter",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Core",
+          "amount": 25,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Core anual",
+          "amount": 20,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "annual",
+          "note": "Precio mensual equivalente con compromiso anual.",
+          "included": null
+        },
+        {
+          "name": "Pro",
+          "amount": 100,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Pro anual",
+          "amount": 95,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "annual",
+          "note": "Precio mensual equivalente con compromiso anual.",
+          "included": null
+        },
+        {
+          "name": "Enterprise",
+          "amount": null,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Cotización",
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://replit.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "bolt",
+      "provider": "StackBlitz",
+      "service_name": "Bolt.new",
+      "category": "IA y desarrollo",
+      "subcategory": "Constructor de apps con IA",
+      "billing_model": "credits_subscription",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Pro",
+          "amount": 25,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Teams",
+          "amount": 30,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://bolt.new/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [
+        "Bolt new",
+        "Bolt"
+      ],
+      "priority": "P1"
+    },
+    {
+      "id": "lovable",
+      "provider": "Lovable",
+      "service_name": "Lovable",
+      "category": "IA y desarrollo",
+      "subcategory": "Constructor de apps con IA",
+      "billing_model": "credits_subscription",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Pro",
+          "amount": 25,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "Desde 100 créditos/mes"
+        },
+        {
+          "name": "Business",
+          "amount": 50,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "Desde 100 créditos/mes"
+        },
+        {
+          "name": "Enterprise",
+          "amount": null,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Cotización",
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://lovable.dev/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "midjourney",
+      "provider": "Midjourney",
+      "service_name": "Midjourney",
+      "category": "Creatividad",
+      "subcategory": "Generación de imágenes",
+      "billing_model": "credits_subscription",
+      "plans": [
+        {
+          "name": "Basic",
+          "amount": 10,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Basic anual",
+          "amount": 96,
+          "currency": "USD",
+          "period": "year",
+          "per_user": false,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Standard",
+          "amount": 30,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Standard anual",
+          "amount": 288,
+          "currency": "USD",
+          "period": "year",
+          "per_user": false,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Pro",
+          "amount": 60,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Pro anual",
+          "amount": 576,
+          "currency": "USD",
+          "period": "year",
+          "per_user": false,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Mega",
+          "amount": 120,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Mega anual",
+          "amount": 1152,
+          "currency": "USD",
+          "period": "year",
+          "per_user": false,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        }
+      ],
+      "usage_rates": [
+        {
+          "name": "GPU adicional",
+          "amount": 4,
+          "currency": "USD",
+          "unit": "hour",
+          "note": null
+        }
+      ],
+      "source_url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "runway",
+      "provider": "Runway",
+      "service_name": "Runway",
+      "category": "Creatividad",
+      "subcategory": "Generación de video",
+      "billing_model": "credits_subscription",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "125 créditos de una sola vez"
+        },
+        {
+          "name": "Standard",
+          "amount": 15,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "625 créditos/mes"
+        },
+        {
+          "name": "Standard anual",
+          "amount": 12,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Pro",
+          "amount": 35,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "2.250 créditos/mes"
+        },
+        {
+          "name": "Pro anual",
+          "amount": 28,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Max",
+          "amount": 95,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "9.500 créditos/mes"
+        },
+        {
+          "name": "Max anual",
+          "amount": 76,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://runwayml.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "elevenlabs",
+      "provider": "ElevenLabs",
+      "service_name": "ElevenLabs",
+      "category": "Creatividad",
+      "subcategory": "Audio y voz IA",
+      "billing_model": "credits_subscription",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Starter",
+          "amount": 6,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Creator",
+          "amount": 22,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Pro",
+          "amount": 99,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Scale",
+          "amount": 299,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Business",
+          "amount": 990,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Enterprise",
+          "amount": null,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Cotización",
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://elevenlabs.io/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "canva",
+      "provider": "Canva",
+      "service_name": "Canva",
+      "category": "Diseño",
+      "subcategory": "Diseño y contenido",
+      "billing_model": "localized_seat_subscription",
+      "plans": [
+        {
+          "name": "Business",
+          "amount": 20,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.canva.com/pricing/",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_reference",
+      "user_confirmation_required": true,
+      "regions": "price_varies_by_country",
+      "notes": "Canva Pro y otros planes deben resolverse por país. Confirmar precio, moneda y número de personas.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "adobe-creative-cloud",
+      "provider": "Adobe",
+      "service_name": "Adobe Creative Cloud",
+      "category": "Diseño",
+      "subcategory": "Suite creativa",
+      "billing_model": "localized_subscription",
+      "plans": [],
+      "usage_rates": [],
+      "source_url": "https://www.adobe.com/creativecloud/plans.html",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "localized_manual_confirmation",
+      "user_confirmation_required": true,
+      "regions": "price_varies_by_country",
+      "notes": "Adobe aplica precios por región, producto, modalidad anual/mensual y promociones. Mostrar planes, pero pedir confirmación del importe real.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "figma",
+      "provider": "Figma",
+      "service_name": "Figma",
+      "category": "Diseño",
+      "subcategory": "Diseño colaborativo",
+      "billing_model": "seat_subscription_credits",
+      "plans": [
+        {
+          "name": "Starter",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Organization Full seat",
+          "amount": 55,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "annual",
+          "note": null,
+          "included": "3.500 créditos IA/mes"
+        },
+        {
+          "name": "Enterprise Full seat",
+          "amount": 90,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "annual",
+          "note": null,
+          "included": "4.250 créditos IA/mes"
+        },
+        {
+          "name": "Enterprise Dev seat",
+          "amount": 35,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "annual",
+          "note": null,
+          "included": "500 créditos IA/mes"
+        },
+        {
+          "name": "Enterprise Collab seat",
+          "amount": 5,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "annual",
+          "note": null,
+          "included": "500 créditos IA/mes"
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.figma.com/pricing/",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_reference",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "Professional tiene múltiples tipos de asiento; consultar la página oficial antes de cargar importes no incluidos en este seed.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "freepik",
+      "provider": "Freepik",
+      "service_name": "Freepik / Magnific",
+      "category": "Creatividad",
+      "subcategory": "Recursos y generación IA",
+      "billing_model": "localized_credits_subscription",
+      "plans": [],
+      "usage_rates": [],
+      "source_url": "https://www.freepik.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "localized_manual_confirmation",
+      "user_confirmation_required": true,
+      "regions": "price_varies_by_country",
+      "notes": "Precios y promociones cambian por región y paquete de créditos. No precargar un importe global fijo.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "envato",
+      "provider": "Envato",
+      "service_name": "Envato Elements",
+      "category": "Creatividad",
+      "subcategory": "Recursos creativos",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        {
+          "name": "Core mensual",
+          "amount": 39,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Core anual",
+          "amount": 16.5,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Plus mensual",
+          "amount": 59,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Plus anual",
+          "amount": 39,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Ultimate mensual",
+          "amount": 169,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Ultimate anual",
+          "amount": 109,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Enterprise",
+          "amount": null,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Cotización",
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://elements.envato.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "github",
+      "provider": "GitHub",
+      "service_name": "GitHub",
+      "category": "IA y desarrollo",
+      "subcategory": "Repositorios y colaboración",
+      "billing_model": "seat_subscription",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Team",
+          "amount": 4,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        }
+      ],
+      "usage_rates": [
+        {
+          "name": "Codespaces compute desde",
+          "amount": 0.18,
+          "currency": "USD",
+          "unit": "hour",
+          "note": null
+        },
+        {
+          "name": "Codespaces storage",
+          "amount": 0.07,
+          "currency": "USD",
+          "unit": "GB-month",
+          "note": null
+        }
+      ],
+      "source_url": "https://github.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_reference",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "gitlab",
+      "provider": "GitLab",
+      "service_name": "GitLab",
+      "category": "IA y desarrollo",
+      "subcategory": "Repositorios y DevSecOps",
+      "billing_model": "seat_subscription",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Premium",
+          "amount": 29,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Ultimate",
+          "amount": null,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "monthly",
+          "note": "Cotización / confirmar",
+          "included": null
+        }
+      ],
+      "usage_rates": [
+        {
+          "name": "Compute adicional",
+          "amount": 10,
+          "currency": "USD",
+          "unit": "1,000 minutes",
+          "note": null
+        }
+      ],
+      "source_url": "https://about.gitlab.com/pricing/",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "bitbucket",
+      "provider": "Atlassian",
+      "service_name": "Bitbucket Cloud",
+      "category": "IA y desarrollo",
+      "subcategory": "Repositorios y CI/CD",
+      "billing_model": "seat_subscription",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Hasta 5 usuarios",
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://bitbucket.org/product/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_plan_names_manual_price",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "Standard y Premium existen, pero el precio puede depender del número de usuarios. Resolver mediante calculadora oficial y confirmación.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "expo-eas",
+      "provider": "Expo",
+      "service_name": "Expo EAS",
+      "category": "IA y desarrollo",
+      "subcategory": "Build, deploy y updates mobile",
+      "billing_model": "hybrid_subscription_usage",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Starter",
+          "amount": 19,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "USD 45 de crédito de build"
+        },
+        {
+          "name": "Production",
+          "amount": 199,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "USD 225 de crédito de build"
+        },
+        {
+          "name": "Enterprise",
+          "amount": null,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Cotización; incluye créditos superiores",
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://expo.dev/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "vercel",
+      "provider": "Vercel",
+      "service_name": "Vercel",
+      "category": "Infraestructura",
+      "subcategory": "Hosting y deployment",
+      "billing_model": "hybrid_subscription_usage",
+      "plans": [
+        {
+          "name": "Hobby",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Pro",
+          "amount": 20,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "USD 20 de uso incluido"
+        },
+        {
+          "name": "Enterprise",
+          "amount": null,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Cotización",
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://vercel.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "netlify",
+      "provider": "Netlify",
+      "service_name": "Netlify",
+      "category": "Infraestructura",
+      "subcategory": "Hosting y deployment",
+      "billing_model": "credits_subscription",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "300 créditos/mes"
+        },
+        {
+          "name": "Personal",
+          "amount": 9,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "1.000 créditos/mes"
+        },
+        {
+          "name": "Pro",
+          "amount": 20,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "Desde 3.000 créditos/mes; miembros ilimitados"
+        },
+        {
+          "name": "Enterprise",
+          "amount": null,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Cotización",
+          "included": null
+        }
+      ],
+      "usage_rates": [
+        {
+          "name": "Recarga Personal",
+          "amount": 5,
+          "currency": "USD",
+          "unit": "500 credits",
+          "note": null
+        },
+        {
+          "name": "Recarga Pro",
+          "amount": 10,
+          "currency": "USD",
+          "unit": "1,500 credits",
+          "note": null
+        }
+      ],
+      "source_url": "https://www.netlify.com/pricing/",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "cloudflare",
+      "provider": "Cloudflare",
+      "service_name": "Cloudflare Application Services",
+      "category": "Infraestructura",
+      "subcategory": "CDN y seguridad",
+      "billing_model": "domain_subscription",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Pro anual",
+          "amount": 20,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "annual",
+          "note": "Por dominio",
+          "included": null
+        },
+        {
+          "name": "Pro mensual",
+          "amount": 25,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Por dominio",
+          "included": null
+        },
+        {
+          "name": "Business anual",
+          "amount": 200,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "annual",
+          "note": "Por dominio",
+          "included": null
+        },
+        {
+          "name": "Business mensual",
+          "amount": 250,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Por dominio",
+          "included": null
+        },
+        {
+          "name": "Enterprise",
+          "amount": null,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Contrato",
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.cloudflare.com/plans/",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "Cloudflare cobra varios productos por separado. Registrar cada producto o zona si el usuario lo necesita.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "railway",
+      "provider": "Railway",
+      "service_name": "Railway",
+      "category": "Infraestructura",
+      "subcategory": "Hosting y deployment",
+      "billing_model": "minimum_plus_usage",
+      "plans": [
+        {
+          "name": "Hobby",
+          "amount": 5,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "USD 5 de uso"
+        },
+        {
+          "name": "Pro",
+          "amount": 20,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "USD 20 de uso"
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://railway.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "El importe del plan actúa como gasto mínimo e incluye uso; pueden existir excedentes.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "render",
+      "provider": "Render",
+      "service_name": "Render",
+      "category": "Infraestructura",
+      "subcategory": "Hosting y deployment",
+      "billing_model": "workspace_subscription_usage",
+      "plans": [
+        {
+          "name": "Hobby",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Pro",
+          "amount": 25,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Scale",
+          "amount": 499,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Enterprise",
+          "amount": null,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Cotización",
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://render.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "Planes de workspace 2026; los recursos siguen pudiendo generar cargos por uso.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "digitalocean",
+      "provider": "DigitalOcean",
+      "service_name": "DigitalOcean",
+      "category": "Infraestructura",
+      "subcategory": "Cloud y hosting",
+      "billing_model": "usage_based",
+      "plans": [],
+      "usage_rates": [
+        {
+          "name": "Droplets desde",
+          "amount": 4,
+          "currency": "USD",
+          "unit": "month",
+          "note": null
+        },
+        {
+          "name": "App Platform web desde",
+          "amount": 5,
+          "currency": "USD",
+          "unit": "month",
+          "note": null
+        },
+        {
+          "name": "Managed PostgreSQL desde",
+          "amount": 15.15,
+          "currency": "USD",
+          "unit": "month",
+          "note": null
+        }
+      ],
+      "source_url": "https://www.digitalocean.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "Seleccionar gasto actual o estimado; los precios dependen del recurso y la región.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "google-cloud",
+      "provider": "Google",
+      "service_name": "Google Cloud",
+      "category": "Infraestructura",
+      "subcategory": "Cloud público",
+      "billing_model": "usage_based",
+      "plans": [],
+      "usage_rates": [],
+      "source_url": "https://cloud.google.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "variable_official",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "Pago por uso. No asignar cuota mensual fija. Pedir gasto del mes, promedio y opcionalmente presupuesto/límite.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "aws",
+      "provider": "Amazon Web Services",
+      "service_name": "AWS",
+      "category": "Infraestructura",
+      "subcategory": "Cloud público",
+      "billing_model": "usage_based",
+      "plans": [],
+      "usage_rates": [],
+      "source_url": "https://aws.amazon.com/pricing/",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "variable_official",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "La mayoría de servicios usan pago por uso. Usar gasto real/estimado y enlace a la calculadora oficial.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "azure",
+      "provider": "Microsoft",
+      "service_name": "Microsoft Azure",
+      "category": "Infraestructura",
+      "subcategory": "Cloud público",
+      "billing_model": "usage_based",
+      "plans": [],
+      "usage_rates": [],
+      "source_url": "https://azure.microsoft.com/en-us/pricing/",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "variable_official",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "Pago por uso y precios por servicio/región. No precargar una mensualidad fija.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "firebase",
+      "provider": "Google",
+      "service_name": "Firebase",
+      "category": "Infraestructura",
+      "subcategory": "Backend as a Service",
+      "billing_model": "freemium_usage",
+      "plans": [
+        {
+          "name": "Spark",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Blaze",
+          "amount": null,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Pago por uso según infraestructura de Google Cloud",
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://firebase.google.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "variable_official",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "En Blaze pedir gasto actual o estimado.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "supabase",
+      "provider": "Supabase",
+      "service_name": "Supabase",
+      "category": "Infraestructura",
+      "subcategory": "Backend as a Service",
+      "billing_model": "hybrid_subscription_usage",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Pro",
+          "amount": 25,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "USD 10/mes de créditos de compute"
+        },
+        {
+          "name": "Team",
+          "amount": 599,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "Primer proyecto incluido"
+        },
+        {
+          "name": "Enterprise",
+          "amount": null,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Cotización",
+          "included": null
+        }
+      ],
+      "usage_rates": [
+        {
+          "name": "Proyecto adicional / compute Micro desde",
+          "amount": 10,
+          "currency": "USD",
+          "unit": "month",
+          "note": null
+        }
+      ],
+      "source_url": "https://supabase.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "mongodb-atlas",
+      "provider": "MongoDB",
+      "service_name": "MongoDB Atlas",
+      "category": "Infraestructura",
+      "subcategory": "Base de datos administrada",
+      "billing_model": "usage_based",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Flex",
+          "amount": null,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Hasta USD 30/mes",
+          "included": null
+        }
+      ],
+      "usage_rates": [
+        {
+          "name": "Flex desde",
+          "amount": 0.011,
+          "currency": "USD",
+          "unit": "hour",
+          "note": null
+        },
+        {
+          "name": "Dedicated desde",
+          "amount": 0.08,
+          "currency": "USD",
+          "unit": "hour",
+          "note": null
+        },
+        {
+          "name": "Dedicated referencia mensual desde",
+          "amount": 56.94,
+          "currency": "USD",
+          "unit": "month",
+          "note": null
+        }
+      ],
+      "source_url": "https://www.mongodb.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "openai-api",
+      "provider": "OpenAI",
+      "service_name": "OpenAI API",
+      "category": "APIs y consumo",
+      "subcategory": "Modelos de IA",
+      "billing_model": "usage_based",
+      "plans": [],
+      "usage_rates": [
+        {
+          "name": "GPT-5.6 Sol input",
+          "amount": 5,
+          "currency": "USD",
+          "unit": "1M tokens",
+          "note": null
+        },
+        {
+          "name": "GPT-5.6 Sol output",
+          "amount": 30,
+          "currency": "USD",
+          "unit": "1M tokens",
+          "note": null
+        },
+        {
+          "name": "GPT-5.6 Terra input",
+          "amount": 2,
+          "currency": "USD",
+          "unit": "1M tokens",
+          "note": null
+        },
+        {
+          "name": "GPT-5.6 Terra output",
+          "amount": 12,
+          "currency": "USD",
+          "unit": "1M tokens",
+          "note": null
+        },
+        {
+          "name": "GPT-5.6 Luna input",
+          "amount": 0.2,
+          "currency": "USD",
+          "unit": "1M tokens",
+          "note": null
+        },
+        {
+          "name": "GPT-5.6 Luna output",
+          "amount": 1.2,
+          "currency": "USD",
+          "unit": "1M tokens",
+          "note": null
+        }
+      ],
+      "source_url": "https://developers.openai.com/api/docs/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "Guardar tarifas por modelo y fecha. En la carga simple, pedir gasto mensual actual; las tarifas son detalle secundario.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "anthropic-api",
+      "provider": "Anthropic",
+      "service_name": "Anthropic API",
+      "category": "APIs y consumo",
+      "subcategory": "Modelos de IA",
+      "billing_model": "usage_based",
+      "plans": [],
+      "usage_rates": [
+        {
+          "name": "Claude Opus 5 input",
+          "amount": 5,
+          "currency": "USD",
+          "unit": "1M tokens",
+          "note": null
+        },
+        {
+          "name": "Claude Opus 5 output",
+          "amount": 25,
+          "currency": "USD",
+          "unit": "1M tokens",
+          "note": null
+        },
+        {
+          "name": "Claude Sonnet 5 input",
+          "amount": 3,
+          "currency": "USD",
+          "unit": "1M tokens",
+          "note": "Puede haber promociones temporales"
+        },
+        {
+          "name": "Claude Sonnet 5 output",
+          "amount": 15,
+          "currency": "USD",
+          "unit": "1M tokens",
+          "note": null
+        },
+        {
+          "name": "Claude Haiku 4.5 input",
+          "amount": 1,
+          "currency": "USD",
+          "unit": "1M tokens",
+          "note": null
+        },
+        {
+          "name": "Claude Haiku 4.5 output",
+          "amount": 5,
+          "currency": "USD",
+          "unit": "1M tokens",
+          "note": null
+        }
+      ],
+      "source_url": "https://www.anthropic.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "Mantener tarifas por modelo; promociones temporales deben tener fecha de vigencia.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "gemini-api",
+      "provider": "Google",
+      "service_name": "Gemini Developer API",
+      "category": "APIs y consumo",
+      "subcategory": "Modelos de IA",
+      "billing_model": "usage_based",
+      "plans": [],
+      "usage_rates": [
+        {
+          "name": "Gemini 3 input (<200k)",
+          "amount": 4,
+          "currency": "USD",
+          "unit": "1M tokens",
+          "note": null
+        },
+        {
+          "name": "Gemini 3 output (<200k)",
+          "amount": 18,
+          "currency": "USD",
+          "unit": "1M tokens",
+          "note": null
+        },
+        {
+          "name": "Batch input referencia",
+          "amount": 0.125,
+          "currency": "USD",
+          "unit": "1M tokens",
+          "note": null
+        },
+        {
+          "name": "Batch output referencia",
+          "amount": 0.75,
+          "currency": "USD",
+          "unit": "1M tokens",
+          "note": null
+        }
+      ],
+      "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "La página incluye muchos modelos, modalidades y umbrales. Tratar las tarifas como registros versionados.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "xai-api",
+      "provider": "xAI",
+      "service_name": "xAI API",
+      "category": "APIs y consumo",
+      "subcategory": "Modelos de IA",
+      "billing_model": "usage_based",
+      "plans": [],
+      "usage_rates": [
+        {
+          "name": "Grok 4.5 input",
+          "amount": 2,
+          "currency": "USD",
+          "unit": "1M tokens",
+          "note": null
+        },
+        {
+          "name": "Grok 4.5 output",
+          "amount": 6,
+          "currency": "USD",
+          "unit": "1M tokens",
+          "note": null
+        },
+        {
+          "name": "Imagen desde",
+          "amount": 0.02,
+          "currency": "USD",
+          "unit": "image",
+          "note": null
+        },
+        {
+          "name": "Video desde",
+          "amount": 0.05,
+          "currency": "USD",
+          "unit": "second",
+          "note": null
+        }
+      ],
+      "source_url": "https://x.ai/api",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "replicate",
+      "provider": "Replicate",
+      "service_name": "Replicate",
+      "category": "APIs y consumo",
+      "subcategory": "Modelos generativos",
+      "billing_model": "usage_based",
+      "plans": [],
+      "usage_rates": [],
+      "source_url": "https://replicate.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "variable_official",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "Cada modelo tiene su propia tarifa. Buscar el modelo específico o pedir gasto mensual actual.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "runpod",
+      "provider": "RunPod",
+      "service_name": "RunPod",
+      "category": "APIs y consumo",
+      "subcategory": "GPU cloud",
+      "billing_model": "usage_based",
+      "plans": [],
+      "usage_rates": [],
+      "source_url": "https://www.runpod.io/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "variable_official",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "Tarifas por GPU, modalidad Pod/Serverless/Cluster y disponibilidad. No precargar una única mensualidad.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "twilio",
+      "provider": "Twilio",
+      "service_name": "Twilio",
+      "category": "APIs y consumo",
+      "subcategory": "Comunicaciones",
+      "billing_model": "usage_based",
+      "plans": [],
+      "usage_rates": [
+        {
+          "name": "SMS/RCS EE.UU. desde",
+          "amount": 0.0083,
+          "currency": "USD",
+          "unit": "message",
+          "note": null
+        },
+        {
+          "name": "WhatsApp desde",
+          "amount": 0.005,
+          "currency": "USD",
+          "unit": "message",
+          "note": "Más tarifas de Meta según caso"
+        },
+        {
+          "name": "Voice receive desde",
+          "amount": 0.0085,
+          "currency": "USD",
+          "unit": "minute",
+          "note": null
+        },
+        {
+          "name": "Voice make desde",
+          "amount": 0.014,
+          "currency": "USD",
+          "unit": "minute",
+          "note": null
+        },
+        {
+          "name": "Verify desde",
+          "amount": 0.05,
+          "currency": "USD",
+          "unit": "verification",
+          "note": null
+        },
+        {
+          "name": "Phone number desde",
+          "amount": 1.15,
+          "currency": "USD",
+          "unit": "month",
+          "note": null
+        }
+      ],
+      "source_url": "https://www.twilio.com/en-us/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "El precio final depende de país, canal, carrier, número y volumen.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "google-workspace",
+      "provider": "Google",
+      "service_name": "Google Workspace",
+      "category": "Trabajo",
+      "subcategory": "Productividad y correo",
+      "billing_model": "localized_seat_subscription",
+      "plans": [
+        {
+          "name": "Business Starter",
+          "amount": 7,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "monthly",
+          "note": "Referencia USD; puede cambiar por modalidad flexible/anual, fecha y país",
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://workspace.google.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_reference",
+      "user_confirmation_required": true,
+      "regions": "price_varies_by_country",
+      "notes": "Guardar Starter, Standard, Plus y Enterprise por país; confirmar precio real.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "microsoft-365",
+      "provider": "Microsoft",
+      "service_name": "Microsoft 365",
+      "category": "Trabajo",
+      "subcategory": "Productividad y correo",
+      "billing_model": "localized_seat_subscription",
+      "plans": [],
+      "usage_rates": [],
+      "source_url": "https://www.microsoft.com/microsoft-365/business",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "localized_manual_confirmation",
+      "user_confirmation_required": true,
+      "regions": "price_varies_by_country",
+      "notes": "Precios por país, plan, impuestos y canal. Mostrar catálogo de planes, pero pedir importe real.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "notion",
+      "provider": "Notion",
+      "service_name": "Notion",
+      "category": "Trabajo",
+      "subcategory": "Productividad y documentación",
+      "billing_model": "seat_subscription_credits",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Plus",
+          "amount": 10,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Business",
+          "amount": 20,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Enterprise",
+          "amount": null,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "monthly",
+          "note": "Cotización",
+          "included": null
+        }
+      ],
+      "usage_rates": [
+        {
+          "name": "Custom Agents",
+          "amount": 10,
+          "currency": "USD",
+          "unit": "1,000 credits",
+          "note": null
+        }
+      ],
+      "source_url": "https://www.notion.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "slack",
+      "provider": "Salesforce",
+      "service_name": "Slack",
+      "category": "Trabajo",
+      "subcategory": "Comunicación de equipos",
+      "billing_model": "seat_subscription",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Pro mensual",
+          "amount": 8.75,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Pro anual",
+          "amount": 7.25,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Business+ mensual",
+          "amount": 18,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Business+ anual",
+          "amount": 15,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://slack.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "zoom",
+      "provider": "Zoom",
+      "service_name": "Zoom Workplace",
+      "category": "Trabajo",
+      "subcategory": "Videollamadas",
+      "billing_model": "localized_seat_subscription",
+      "plans": [
+        {
+          "name": "Basic",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://zoom.us/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "localized_manual_confirmation",
+      "user_confirmation_required": true,
+      "regions": "price_varies_by_country",
+      "notes": "Zoom adapta precios y paquetes por país. Confirmar Pro, Business y add-ons en checkout.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "dropbox",
+      "provider": "Dropbox",
+      "service_name": "Dropbox",
+      "category": "Almacenamiento",
+      "subcategory": "Almacenamiento y colaboración",
+      "billing_model": "subscription",
+      "plans": [
+        {
+          "name": "Basic",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "2 GB",
+          "included": null
+        },
+        {
+          "name": "Plus",
+          "amount": 9.99,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Standard",
+          "amount": 15,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Advanced",
+          "amount": 24,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.dropbox.com/plans",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "miro",
+      "provider": "Miro",
+      "service_name": "Miro",
+      "category": "Trabajo",
+      "subcategory": "Pizarra y colaboración",
+      "billing_model": "seat_subscription",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Starter anual",
+          "amount": 8,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://miro.com/pricing/",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_reference",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "Business y Enterprise deben confirmarse según tamaño y facturación.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "framer",
+      "provider": "Framer",
+      "service_name": "Framer",
+      "category": "Diseño",
+      "subcategory": "Website builder",
+      "billing_model": "hybrid_subscription_credits",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "500 créditos de prueba"
+        },
+        {
+          "name": "Basic",
+          "amount": 10,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Pro",
+          "amount": 30,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Enterprise",
+          "amount": null,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Cotización",
+          "included": null
+        },
+        {
+          "name": "Editor adicional",
+          "amount": 20,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        }
+      ],
+      "usage_rates": [
+        {
+          "name": "Locale adicional",
+          "amount": 20,
+          "currency": "USD",
+          "unit": "locale-month",
+          "note": null
+        },
+        {
+          "name": "Convert",
+          "amount": 50,
+          "currency": "USD",
+          "unit": "500,000 events",
+          "note": null
+        }
+      ],
+      "source_url": "https://www.framer.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "webflow",
+      "provider": "Webflow",
+      "service_name": "Webflow",
+      "category": "Diseño",
+      "subcategory": "Website builder",
+      "billing_model": "site_subscription",
+      "plans": [
+        {
+          "name": "Starter",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Basic anual",
+          "amount": 15,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "annual",
+          "note": "Por sitio",
+          "included": null
+        },
+        {
+          "name": "Premium anual",
+          "amount": 25,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "annual",
+          "note": "Por sitio",
+          "included": null
+        },
+        {
+          "name": "Team",
+          "amount": 2500,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Contrato anual; plataforma organizacional",
+          "included": null
+        },
+        {
+          "name": "Enterprise",
+          "amount": null,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Cotización",
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://webflow.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "zapier",
+      "provider": "Zapier",
+      "service_name": "Zapier",
+      "category": "Automatización",
+      "subcategory": "Automatización no-code",
+      "billing_model": "tasks_subscription",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Professional desde",
+          "amount": 19.99,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Team desde",
+          "amount": 69,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "25 usuarios"
+        },
+        {
+          "name": "Enterprise",
+          "amount": null,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Cotización",
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://zapier.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "El precio depende del volumen de tareas y modalidad anual/mensual.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "make",
+      "provider": "Make",
+      "service_name": "Make",
+      "category": "Automatización",
+      "subcategory": "Automatización no-code",
+      "billing_model": "credits_subscription",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "1.000 créditos/mes"
+        },
+        {
+          "name": "Core",
+          "amount": 12,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "10.000 créditos/mes"
+        },
+        {
+          "name": "Pro",
+          "amount": 21,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "10.000 créditos/mes"
+        },
+        {
+          "name": "Teams",
+          "amount": 38,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "10.000 créditos/mes"
+        },
+        {
+          "name": "Enterprise",
+          "amount": null,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Cotización",
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.make.com/en/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "n8n",
+      "provider": "n8n",
+      "service_name": "n8n",
+      "category": "Automatización",
+      "subcategory": "Automatización técnica",
+      "billing_model": "executions_subscription",
+      "plans": [
+        {
+          "name": "Community self-hosted",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Starter anual",
+          "amount": 20,
+          "currency": "EUR",
+          "period": "month",
+          "per_user": false,
+          "billed": "annual",
+          "note": null,
+          "included": "2.500 ejecuciones/mes"
+        },
+        {
+          "name": "Pro anual",
+          "amount": 50,
+          "currency": "EUR",
+          "period": "month",
+          "per_user": false,
+          "billed": "annual",
+          "note": null,
+          "included": "10.000 ejecuciones/mes"
+        },
+        {
+          "name": "Business anual",
+          "amount": 667,
+          "currency": "EUR",
+          "period": "month",
+          "per_user": false,
+          "billed": "annual",
+          "note": null,
+          "included": "40.000 ejecuciones/mes"
+        },
+        {
+          "name": "Enterprise",
+          "amount": null,
+          "currency": "EUR",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Cotización",
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://n8n.io/pricing/",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "airtable",
+      "provider": "Airtable",
+      "service_name": "Airtable",
+      "category": "Trabajo",
+      "subcategory": "Base de datos no-code",
+      "billing_model": "seat_subscription",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Team anual",
+          "amount": 20,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Business anual",
+          "amount": 45,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Enterprise Scale",
+          "amount": null,
+          "currency": "USD",
+          "period": "month",
+          "per_user": true,
+          "billed": "monthly",
+          "note": "Cotización",
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://airtable.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "sentry",
+      "provider": "Sentry",
+      "service_name": "Sentry",
+      "category": "Analítica y monitoreo",
+      "subcategory": "Errores y performance",
+      "billing_model": "event_based",
+      "plans": [
+        {
+          "name": "Developer",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Team",
+          "amount": null,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Precio depende de cuotas/eventos",
+          "included": null
+        },
+        {
+          "name": "Business",
+          "amount": null,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Precio depende de cuotas/eventos",
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://sentry.io/pricing/",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "variable_official",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "Guardar plan base y consumo por errores, trazas, replays y logs.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "datadog",
+      "provider": "Datadog",
+      "service_name": "Datadog",
+      "category": "Analítica y monitoreo",
+      "subcategory": "Observabilidad",
+      "billing_model": "usage_based_per_host",
+      "plans": [
+        {
+          "name": "Infrastructure Pro anual",
+          "amount": 15,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "annual",
+          "note": "Por host/mes",
+          "included": null
+        },
+        {
+          "name": "Infrastructure Pro mensual",
+          "amount": 18,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Por host/mes",
+          "included": null
+        },
+        {
+          "name": "Infrastructure Enterprise anual",
+          "amount": 23,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "annual",
+          "note": "Por host/mes",
+          "included": null
+        },
+        {
+          "name": "Infrastructure Enterprise mensual",
+          "amount": 27,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Por host/mes",
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.datadoghq.com/pricing/list/",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "Datadog tiene muchos productos adicionales; cada SKU debe modelarse como tarifa separada.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "mixpanel",
+      "provider": "Mixpanel",
+      "service_name": "Mixpanel",
+      "category": "Analítica y monitoreo",
+      "subcategory": "Product analytics",
+      "billing_model": "usage_based",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": "Hasta 1M eventos mensuales"
+        },
+        {
+          "name": "Growth",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Empieza en USD 0 con 1M eventos gratis",
+          "included": null
+        }
+      ],
+      "usage_rates": [
+        {
+          "name": "Eventos después del free tier",
+          "amount": 0.28,
+          "currency": "USD",
+          "unit": "1,000 events",
+          "note": null
+        }
+      ],
+      "source_url": "https://mixpanel.com/pricing/",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "posthog",
+      "provider": "PostHog",
+      "service_name": "PostHog",
+      "category": "Analítica y monitoreo",
+      "subcategory": "Product analytics",
+      "billing_model": "usage_based",
+      "plans": [
+        {
+          "name": "Free",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Pay-as-you-go",
+          "amount": 0,
+          "currency": "USD",
+          "period": "month",
+          "per_user": false,
+          "billed": "monthly",
+          "note": "Comienza en USD 0 y cobra por uso después del free tier",
+          "included": null
+        }
+      ],
+      "usage_rates": [
+        {
+          "name": "Product Analytics desde",
+          "amount": 5e-05,
+          "currency": "USD",
+          "unit": "event",
+          "note": null
+        },
+        {
+          "name": "Replay Vision",
+          "amount": 0.01,
+          "currency": "USD",
+          "unit": "credit",
+          "note": null
+        },
+        {
+          "name": "Boost package",
+          "amount": 250,
+          "currency": "USD",
+          "unit": "month",
+          "note": null
+        },
+        {
+          "name": "Scale package",
+          "amount": 750,
+          "currency": "USD",
+          "unit": "month",
+          "note": null
+        }
+      ],
+      "source_url": "https://posthog.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "cloudflare-registrar",
+      "provider": "Cloudflare",
+      "service_name": "Cloudflare Registrar",
+      "category": "Dominios y distribución",
+      "subcategory": "Registro de dominios",
+      "billing_model": "domain_dependent",
+      "plans": [],
+      "usage_rates": [
+        {
+          "name": "Dominios desde",
+          "amount": 7.85,
+          "currency": "USD",
+          "unit": "year",
+          "note": null
+        }
+      ],
+      "source_url": "https://www.cloudflare.com/products/registrar/",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_reference",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "Cloudflare cobra al costo de registro sin margen; el precio depende del TLD.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "namecheap",
+      "provider": "Namecheap",
+      "service_name": "Namecheap Domains",
+      "category": "Dominios y distribución",
+      "subcategory": "Registro de dominios",
+      "billing_model": "domain_dependent",
+      "plans": [],
+      "usage_rates": [],
+      "source_url": "https://www.namecheap.com/domains/",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "domain_dynamic",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "Precio depende del TLD, alta vs renovación y promociones. Añadir tarifa ICANN cuando corresponda. Nunca usar precio promocional como renovación.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "godaddy",
+      "provider": "GoDaddy",
+      "service_name": "GoDaddy Domains",
+      "category": "Dominios y distribución",
+      "subcategory": "Registro de dominios",
+      "billing_model": "domain_dependent",
+      "plans": [],
+      "usage_rates": [],
+      "source_url": "https://www.godaddy.com/domains",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "domain_dynamic",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "Precio depende del TLD, alta, renovación, promociones y país. Separar precio del primer año y renovación.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "apple-developer",
+      "provider": "Apple",
+      "service_name": "Apple Developer Program",
+      "category": "Dominios y distribución",
+      "subcategory": "Distribución de apps",
+      "billing_model": "annual_membership",
+      "plans": [
+        {
+          "name": "Apple Developer Program",
+          "amount": 99,
+          "currency": "USD",
+          "period": "year",
+          "per_user": false,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        },
+        {
+          "name": "Apple Developer Enterprise Program",
+          "amount": 299,
+          "currency": "USD",
+          "period": "year",
+          "per_user": false,
+          "billed": "annual",
+          "note": null,
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://developer.apple.com/programs/enroll/",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "local_currency_available",
+      "notes": "Puede haber exenciones para organizaciones elegibles.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "google-play-console",
+      "provider": "Google",
+      "service_name": "Google Play Console",
+      "category": "Dominios y distribución",
+      "subcategory": "Distribución de apps",
+      "billing_model": "one_time",
+      "plans": [
+        {
+          "name": "Registro de desarrollador",
+          "amount": 25,
+          "currency": "USD",
+          "period": "one_time",
+          "per_user": false,
+          "billed": "one_time",
+          "note": null,
+          "included": null
+        }
+      ],
+      "usage_rates": [],
+      "source_url": "https://support.google.com/googleplay/android-developer/answer/6112435",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global_reference",
+      "notes": "Pago único; no incluirlo en gasto mensual recurrente salvo amortización opcional.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "netflix",
+      "provider": "Netflix",
+      "service_name": "Netflix",
+      "category": "Streaming y entretenimiento",
+      "subcategory": "Películas y series",
+      "billing_model": "localized_subscription",
+      "plans": [
+        { "name": "Standard with Ads", "amount": 8.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Con anuncios; 2 dispositivos simultáneos, 1080p", "included": null },
+        { "name": "Standard", "amount": 19.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Sin anuncios; 2 dispositivos, 1080p, descargas en 2 dispositivos", "included": null },
+        { "name": "Premium", "amount": 26.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "4K UHD + HDR; 4 dispositivos, descargas en 6 dispositivos, audio espacial", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://help.netflix.com/en/node/24926",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Precios subieron en marzo 2026. Miembro extra: $7.99/mes con anuncios o $9.99/mes sin anuncios.",
+      "aliases": ["Netflix Streaming"],
+      "priority": "P1"
+    },
+    {
+      "id": "disney-plus",
+      "provider": "Disney",
+      "service_name": "Disney+",
+      "category": "Streaming y entretenimiento",
+      "subcategory": "Películas y series",
+      "billing_model": "localized_subscription",
+      "plans": [
+        { "name": "Basic with Ads", "amount": 11.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Con anuncios", "included": null },
+        { "name": "Premium", "amount": 18.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Sin anuncios; 4K UHD, descargas", "included": null },
+        { "name": "Premium Annual", "amount": 189.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "Sin anuncios; ahorro ~17%", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.disneyplus.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Hulu se está integrando en Disney+. Bundle Disney+ + Hulu con anuncios: $12.99/mes.",
+      "aliases": ["Disney Plus", "Disney Plus Premium"],
+      "priority": "P1"
+    },
+    {
+      "id": "hbo-max",
+      "provider": "Warner Bros. Discovery",
+      "service_name": "HBO Max",
+      "category": "Streaming y entretenimiento",
+      "subcategory": "Películas y series",
+      "billing_model": "localized_subscription",
+      "plans": [
+        { "name": "Basic with Ads", "amount": 10.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Con anuncios", "included": null },
+        { "name": "Standard", "amount": 18.49, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Sin anuncios; 1080p, 2 dispositivos", "included": null },
+        { "name": "Premium", "amount": 22.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "4K UHD + HDR; 4 dispositivos, descargas", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.max.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Anteriormente Max; volvió a llamarse HBO Max en 2025.",
+      "aliases": ["Max", "HBO Max", "Warner Bros Discovery Streaming"],
+      "priority": "P1"
+    },
+    {
+      "id": "prime-video",
+      "provider": "Amazon",
+      "service_name": "Prime Video",
+      "category": "Streaming y entretenimiento",
+      "subcategory": "Películas y series",
+      "billing_model": "localized_subscription",
+      "plans": [
+        { "name": "Standalone with Ads", "amount": 8.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Sin Prime; con anuncios", "included": null },
+        { "name": "Prime (incluye Prime Video)", "amount": 14.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Incluye envíos gratis, Prime Video con anuncios", "included": null },
+        { "name": "Prime Annual", "amount": 139, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "Ahorro vs mensual", "included": null },
+        { "name": "Prime Video Ultra (add-on sin anuncios)", "amount": 4.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Add-on sobre Prime; sin anuncios + 4K", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.amazon.com/prime",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Prime Video Ultra introducido abril 2026 como add-on sin anuncios.",
+      "aliases": ["Amazon Prime Video", "Amazon Prime"],
+      "priority": "P1"
+    },
+    {
+      "id": "apple-tv-plus",
+      "provider": "Apple",
+      "service_name": "Apple TV+",
+      "category": "Streaming y entretenimiento",
+      "subcategory": "Películas y series",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Monthly", "amount": 12.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Sin anuncios; 6 dispositivos simultáneos", "included": null },
+        { "name": "Annual", "amount": 99.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "Ahorro ~36%", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://tv.apple.com",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "3 meses gratis con compra de dispositivo Apple nuevo.",
+      "aliases": ["Apple TV Plus", "Apple TV"],
+      "priority": "P1"
+    },
+    {
+      "id": "paramount-plus",
+      "provider": "Paramount",
+      "service_name": "Paramount+",
+      "category": "Streaming y entretenimiento",
+      "subcategory": "Películas y series",
+      "billing_model": "localized_subscription",
+      "plans": [
+        { "name": "Essential", "amount": 8.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Con anuncios", "included": null },
+        { "name": "Premium with Showtime", "amount": 13.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Sin anuncios + Showtime + CBS en vivo + 4K", "included": null },
+        { "name": "Essential Annual", "amount": 89.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": null, "included": null },
+        { "name": "Premium Annual", "amount": 139.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": null, "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.paramountplus.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Subió precios en enero 2026. Incluye UFC exclusivo desde 2026.",
+      "aliases": ["Paramount Plus", "CBS All Access"],
+      "priority": "P1"
+    },
+    {
+      "id": "crunchyroll",
+      "provider": "Crunchyroll",
+      "service_name": "Crunchyroll",
+      "category": "Streaming y entretenimiento",
+      "subcategory": "Anime",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Fan", "amount": 9.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Sin anuncios; 1 dispositivo", "included": null },
+        { "name": "Mega Fan", "amount": 11.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Sin anuncios; 4 dispositivos, descargas offline", "included": null },
+        { "name": "Ultimate Fan", "amount": 17.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "6 dispositivos, descargas, merch exclusivo", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.crunchyroll.com/welcome",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Max 1080p en todos los tiers; sin 4K.",
+      "aliases": [],
+      "priority": "P2"
+    },
+    {
+      "id": "youtube-premium",
+      "provider": "Google",
+      "service_name": "YouTube Premium",
+      "category": "Streaming y entretenimiento",
+      "subcategory": "Video",
+      "billing_model": "localized_subscription",
+      "plans": [
+        { "name": "Individual", "amount": 15.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Sin anuncios + YouTube Music incluido", "included": null },
+        { "name": "Family", "amount": 26.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Hasta 6 miembros", "included": null },
+        { "name": "Lite", "amount": 8.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Sin anuncios para la mayoría del contenido; sin música", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.youtube.com/premium",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Subió precios en abril 2026.",
+      "aliases": ["YouTube Red"],
+      "priority": "P1"
+    },
+    {
+      "id": "twitch-turbo",
+      "provider": "Twitch",
+      "service_name": "Twitch Turbo",
+      "category": "Streaming y entretenimiento",
+      "subcategory": "Gaming streaming",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Turbo", "amount": 11.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Sin anuncios en Twitch", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://twitch.tv/turbo",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_reference",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "No incluye suscripciones a canales individuales.",
+      "aliases": [],
+      "priority": "P2"
+    },
+    {
+      "id": "patreon",
+      "provider": "Patreon",
+      "service_name": "Patreon",
+      "category": "Streaming y entretenimiento",
+      "subcategory": "Creator support",
+      "billing_model": "usage_based",
+      "plans": [],
+      "usage_rates": [],
+      "source_url": "https://www.patreon.com",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "variable_official",
+      "user_confirmation_required": true,
+      "regions": "global",
+      "notes": "Cada creator define su propio precio mensual. El usuario debe ingresar el monto que paga.",
+      "aliases": [],
+      "priority": "P2"
+    },
+    {
+      "id": "spotify",
+      "provider": "Spotify",
+      "service_name": "Spotify Premium",
+      "category": "Música",
+      "subcategory": "Streaming de música",
+      "billing_model": "localized_subscription",
+      "plans": [
+        { "name": "Individual", "amount": 12.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "320 kbps Ogg Vorbis", "included": null },
+        { "name": "Duo", "amount": 18.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "2 cuentas", "included": null },
+        { "name": "Family", "amount": 21.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Hasta 6 cuentas", "included": null },
+        { "name": "Student", "amount": 5.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Verificación estudiantil requerida", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.spotify.com/premium",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Subió precios en enero 2026. Tier free con anuncios disponible.",
+      "aliases": ["Spotify"],
+      "priority": "P1"
+    },
+    {
+      "id": "apple-music",
+      "provider": "Apple",
+      "service_name": "Apple Music",
+      "category": "Música",
+      "subcategory": "Streaming de música",
+      "billing_model": "localized_subscription",
+      "plans": [
+        { "name": "Individual", "amount": 10.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Lossless ALAC + Dolby Atmos incluido", "included": null },
+        { "name": "Family", "amount": 16.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Hasta 6 cuentas", "included": null },
+        { "name": "Student", "amount": 5.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "Annual", "amount": 109, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": null, "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.apple.com/apple-music",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Incluido en Apple One desde $21.95/mes.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "youtube-music",
+      "provider": "Google",
+      "service_name": "YouTube Music",
+      "category": "Música",
+      "subcategory": "Streaming de música",
+      "billing_model": "localized_subscription",
+      "plans": [
+        { "name": "Individual", "amount": 11.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "256 kbps AAC; incluido en YouTube Premium", "included": null },
+        { "name": "Family", "amount": 18.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Hasta 6 cuentas", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://music.youtube.com/premium",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Subió precios en abril 2026.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "tidal",
+      "provider": "Tidal",
+      "service_name": "Tidal",
+      "category": "Música",
+      "subcategory": "Streaming de música",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "HiFi Individual", "amount": 10.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Lossless FLAC + Dolby Atmos; sube a $11.99 en agosto 2026", "included": null },
+        { "name": "HiFi Family", "amount": 16.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Hasta 6 cuentas", "included": null },
+        { "name": "Student", "amount": 4.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "HiFi completo", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://tidal.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Sube a $11.99/mes desde agosto 3, 2026.",
+      "aliases": [],
+      "priority": "P2"
+    },
+    {
+      "id": "amazon-music",
+      "provider": "Amazon",
+      "service_name": "Amazon Music Unlimited",
+      "category": "Música",
+      "subcategory": "Streaming de música",
+      "billing_model": "localized_subscription",
+      "plans": [
+        { "name": "Individual (Prime)", "amount": 9.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Requiere Prime; lossless HD + Ultra HD", "included": null },
+        { "name": "Individual (non-Prime)", "amount": 10.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Sin requerir Prime", "included": null },
+        { "name": "Family", "amount": 16.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Hasta 6 cuentas", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.amazon.com/music/unlimited",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Plan Single-Device Echo: $5.99/mes.",
+      "aliases": ["Amazon Music"],
+      "priority": "P1"
+    },
+    {
+      "id": "deezer",
+      "provider": "Deezer",
+      "service_name": "Deezer",
+      "category": "Música",
+      "subcategory": "Streaming de música",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Premium", "amount": 10.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Lossless FLAC", "included": null },
+        { "name": "Family", "amount": 17.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Hasta 6 cuentas", "included": null },
+        { "name": "Annual", "amount": 107.88, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "~$8.99/mes equivalente", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.deezer.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Tier free con anuncios disponible.",
+      "aliases": [],
+      "priority": "P2"
+    },
+    {
+      "id": "xbox-game-pass",
+      "provider": "Microsoft",
+      "service_name": "Xbox Game Pass",
+      "category": "Gaming",
+      "subcategory": "Game subscription",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Essential", "amount": 9.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Online multiplayer + library pequeña", "included": null },
+        { "name": "Premium", "amount": 14.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Catálogo más grande en consola", "included": null },
+        { "name": "PC Game Pass", "amount": 13.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Solo PC", "included": null },
+        { "name": "Ultimate", "amount": 22.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Consola + PC + Cloud Gaming + EA Play", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.xbox.com/game-pass",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Ultimate bajó de $29.99 a $22.99 en abril 2026. CoD ya no day-one.",
+      "aliases": ["Game Pass", "XGPU"],
+      "priority": "P1"
+    },
+    {
+      "id": "playstation-plus",
+      "provider": "Sony",
+      "service_name": "PlayStation Plus",
+      "category": "Gaming",
+      "subcategory": "Game subscription",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Essential", "amount": 9.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Online play + juegos mensuales", "included": null },
+        { "name": "Extra", "amount": 14.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Catálogo grande PS4/PS5", "included": null },
+        { "name": "Premium", "amount": 17.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Extra + classics + cloud streaming + trials", "included": null },
+        { "name": "Essential Annual", "amount": 79.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": null, "included": null },
+        { "name": "Extra Annual", "amount": 134.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": null, "included": null },
+        { "name": "Premium Annual", "amount": 159.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": null, "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.playstation.com/ps-plus",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": null,
+      "aliases": ["PS Plus"],
+      "priority": "P1"
+    },
+    {
+      "id": "nintendo-switch-online",
+      "provider": "Nintendo",
+      "service_name": "Nintendo Switch Online",
+      "category": "Gaming",
+      "subcategory": "Game subscription",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Individual Monthly", "amount": 3.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "Individual Annual", "amount": 19.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": null, "included": null },
+        { "name": "Family Annual", "amount": 34.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "Hasta 8 cuentas", "included": null },
+        { "name": "Expansion Pack Individual", "amount": 49.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "Incluye N64, GBA, Sega Genesis, GameCube (Switch 2)", "included": null },
+        { "name": "Expansion Pack Family", "amount": 79.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "Hasta 8 cuentas", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.nintendo.com/switch-online",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "El más barato de los gaming subscriptions.",
+      "aliases": ["NSO"],
+      "priority": "P1"
+    },
+    {
+      "id": "apple-arcade",
+      "provider": "Apple",
+      "service_name": "Apple Arcade",
+      "category": "Gaming",
+      "subcategory": "Mobile gaming",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Monthly", "amount": 6.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Sin microtransacciones", "included": null },
+        { "name": "Annual", "amount": 49.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": null, "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.apple.com/apple-arcade",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Incluido en Apple One Family.",
+      "aliases": [],
+      "priority": "P2"
+    },
+    {
+      "id": "geforce-now",
+      "provider": "Nvidia",
+      "service_name": "GeForce Now",
+      "category": "Gaming",
+      "subcategory": "Cloud gaming",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Free", "amount": 0, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Sesiones de 1 hora con cola", "included": null },
+        { "name": "Performance", "amount": 9.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Sesiones de 6 horas, prioridad", "included": null },
+        { "name": "Ultimate", "amount": 19.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "RTX 4080, sesiones de 8 horas, 4K", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://geforcenow.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Streaming de juegos que ya posees (Steam, Epic, etc.).",
+      "aliases": ["Nvidia GeForce Now"],
+      "priority": "P2"
+    },
+    {
+      "id": "nordvpn",
+      "provider": "Nord Security",
+      "service_name": "NordVPN",
+      "category": "VPN y seguridad",
+      "subcategory": "VPN",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Monthly", "amount": 12.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "Annual", "amount": 59.88, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "Promo primer año; renueva a $139.08/año", "included": null },
+        { "name": "2-Year", "amount": 94.23, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "27 meses intro; renueva a $139.08/año", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://nordvpn.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global",
+      "notes": "Precios promocionales renuevan más caros. Plan Plus incluye password manager.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "expressvpn",
+      "provider": "ExpressVPN",
+      "service_name": "ExpressVPN",
+      "category": "VPN y seguridad",
+      "subcategory": "VPN",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Monthly", "amount": 12.95, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "Annual", "amount": 99.95, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": null, "included": null },
+        { "name": "2-Year", "amount": 83.72, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "28 meses intro; renueva a $99.95/año", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.expressvpn.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "surfshark",
+      "provider": "Surfshark",
+      "service_name": "Surfshark",
+      "category": "VPN y seguridad",
+      "subcategory": "VPN",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Monthly", "amount": 15.45, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "2-Year", "amount": 60.56, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "Promo; renueva más caro", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://surfshark.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_reference",
+      "user_confirmation_required": true,
+      "regions": "global",
+      "notes": "Dispositivos ilimitados en un plan.",
+      "aliases": [],
+      "priority": "P2"
+    },
+    {
+      "id": "proton-vpn",
+      "provider": "Proton",
+      "service_name": "Proton VPN",
+      "category": "VPN y seguridad",
+      "subcategory": "VPN",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Free", "amount": 0, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Limitado", "included": null },
+        { "name": "Plus", "amount": 9.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "Plus Annual", "amount": 71.88, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "~$5.99/mes", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://protonvpn.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global",
+      "notes": "Incluido en Proton Unlimited (VPN + Mail + Drive + Passwords).",
+      "aliases": [],
+      "priority": "P2"
+    },
+    {
+      "id": "1password",
+      "provider": "1Password",
+      "service_name": "1Password",
+      "category": "VPN y seguridad",
+      "subcategory": "Password manager",
+      "billing_model": "seat_subscription",
+      "plans": [
+        { "name": "Individual", "amount": 2.99, "currency": "USD", "period": "month", "per_user": false, "billed": "annual", "note": "Pago anual", "included": null },
+        { "name": "Family", "amount": 4.99, "currency": "USD", "period": "month", "per_user": false, "billed": "annual", "note": "Hasta 5 miembros", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://1password.com/pricing/personal",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global",
+      "notes": "Precios promo primer año; renuevan a $3.99/$5.99.",
+      "aliases": [],
+      "priority": "P2"
+    },
+    {
+      "id": "bitwarden",
+      "provider": "Bitwarden",
+      "service_name": "Bitwarden Premium",
+      "category": "VPN y seguridad",
+      "subcategory": "Password manager",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Premium", "amount": 10, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "Plan free disponible; Premium muy barato", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://bitwarden.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global",
+      "notes": "Tier free muy completo. Premium a solo $10/año.",
+      "aliases": [],
+      "priority": "P2"
+    },
+    {
+      "id": "google-one",
+      "provider": "Google",
+      "service_name": "Google One",
+      "category": "Cloud storage",
+      "subcategory": "Almacenamiento en la nube",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Basic (100 GB)", "amount": 1.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "Standard (200 GB)", "amount": 2.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "Premium (2 TB)", "amount": 9.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Compartir con hasta 5", "included": null },
+        { "name": "AI Pro (5 TB)", "amount": 19.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Incluye Google AI features", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://one.google.com/about/plans",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "15 GB gratis incluidos. Google One se está integrando con Google AI plans.",
+      "aliases": ["Google Drive Storage"],
+      "priority": "P1"
+    },
+    {
+      "id": "icloud-plus",
+      "provider": "Apple",
+      "service_name": "iCloud+",
+      "category": "Cloud storage",
+      "subcategory": "Almacenamiento en la nube",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "50 GB", "amount": 0.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "200 GB", "amount": 2.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "2 TB", "amount": 9.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "6 TB", "amount": 29.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "12 TB", "amount": 59.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://support.apple.com/icloud-storage",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "5 GB gratis. Incluido en Apple One.",
+      "aliases": ["iCloud Storage"],
+      "priority": "P1"
+    },
+    {
+      "id": "microsoft-365-personal",
+      "provider": "Microsoft",
+      "service_name": "Microsoft 365 Personal",
+      "category": "Cloud storage",
+      "subcategory": "Office + storage",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Basic (100 GB)", "amount": 1.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Solo storage, sin Office apps", "included": null },
+        { "name": "Personal (1 TB + Office)", "amount": 9.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Word, Excel, PowerPoint + 1 TB OneDrive", "included": null },
+        { "name": "Personal Annual", "amount": 99.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": null, "included": null },
+        { "name": "Family Annual", "amount": 129.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "Hasta 6 personas, 1 TB cada uno", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.microsoft.com/microsoft-365/onedrive/onedrive-plans-and-pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Incluye Office apps + OneDrive.",
+      "aliases": ["Office 365", "Microsoft 365", "OneDrive"],
+      "priority": "P1"
+    },
+    {
+      "id": "dropbox",
+      "provider": "Dropbox",
+      "service_name": "Dropbox",
+      "category": "Cloud storage",
+      "subcategory": "Almacenamiento en la nube",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Plus (2 TB)", "amount": 11.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "Plus Annual", "amount": 119.88, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": null, "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.dropbox.com/plans",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Basic free: 2 GB. Standard: $15/mes/usuario.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "duolingo",
+      "provider": "Duolingo",
+      "service_name": "Duolingo",
+      "category": "Educación",
+      "subcategory": "Idiomas",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Super Duolingo", "amount": 6.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Sin anuncios", "included": null },
+        { "name": "Super Annual", "amount": 83.88, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "~$6.99/mes", "included": null },
+        { "name": "Duolingo Max", "amount": 29.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "GPT-4 features: Roleplay, Explain My Answer", "included": null },
+        { "name": "Family Plan", "amount": 119.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "Hasta 6 miembros", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.duolingo.com/plus",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Tier free con anuncios disponible.",
+      "aliases": ["Duolingo Plus", "Duolingo Super"],
+      "priority": "P1"
+    },
+    {
+      "id": "coursera-plus",
+      "provider": "Coursera",
+      "service_name": "Coursera Plus",
+      "category": "Educación",
+      "subcategory": "Cursos online",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Monthly", "amount": 59, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "10,000+ cursos, certificados incluidos", "included": null },
+        { "name": "Annual", "amount": 399, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "Ahorro ~44%", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.coursera.org/courseraplus",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global",
+      "notes": "Audit free disponible para la mayoría de cursos (sin certificado).",
+      "aliases": ["Coursera"],
+      "priority": "P1"
+    },
+    {
+      "id": "skillshare",
+      "provider": "Skillshare",
+      "service_name": "Skillshare",
+      "category": "Educación",
+      "subcategory": "Cursos creativos",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Annual", "amount": 167.88, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "~$13.99/mes", "included": null },
+        { "name": "Monthly", "amount": 18.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Via app stores", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.skillshare.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Trial 7 días. 34,000+ clases creativas.",
+      "aliases": [],
+      "priority": "P2"
+    },
+    {
+      "id": "masterclass",
+      "provider": "MasterClass",
+      "service_name": "MasterClass",
+      "category": "Educación",
+      "subcategory": "Cursos online",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Individual Annual", "amount": 120, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "~$10/mes", "included": null },
+        { "name": "Duo Annual", "amount": 180, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "2 dispositivos", "included": null },
+        { "name": "Family Annual", "amount": 240, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "6 dispositivos", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.masterclass.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_reference",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Clases dictadas por celebridades y expertos reconocidos.",
+      "aliases": [],
+      "priority": "P2"
+    },
+    {
+      "id": "brilliant",
+      "provider": "Brilliant",
+      "service_name": "Brilliant",
+      "category": "Educación",
+      "subcategory": "Ciencia y matemáticas",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Monthly", "amount": 15, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "Annual", "amount": 120, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "~$10/mes", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://brilliant.org/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_reference",
+      "user_confirmation_required": true,
+      "regions": "global",
+      "notes": "Matemáticas, ciencia y CS interactivos.",
+      "aliases": [],
+      "priority": "P2"
+    },
+    {
+      "id": "udemy",
+      "provider": "Udemy",
+      "service_name": "Udemy Personal Plan",
+      "category": "Educación",
+      "subcategory": "Cursos online",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Monthly", "amount": 32, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Acceso a catálogo de suscripción", "included": null },
+        { "name": "Annual", "amount": 156, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "~$13/mes", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.udemy.com/subscription",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global",
+      "notes": "Cursos individuales se compran aparte ($10-$200). Coursera anunció adquisición de Udemy en 2025.",
+      "aliases": [],
+      "priority": "P2"
+    },
+    {
+      "id": "strava",
+      "provider": "Strava",
+      "service_name": "Strava",
+      "category": "Fitness y salud",
+      "subcategory": "Deporte y actividad",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Monthly", "amount": 11.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "Annual", "amount": 79.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": null, "included": null },
+        { "name": "Family Annual", "amount": 139.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": null, "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.strava.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "myfitnesspal",
+      "provider": "MyFitnessPal",
+      "service_name": "MyFitnessPal",
+      "category": "Fitness y salud",
+      "subcategory": "Nutrición",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Premium", "amount": 79.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "~$6.67/mes", "included": null },
+        { "name": "Premium+", "amount": 99.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "~$8.34/mes; incluye meal planner y recetas", "included": null },
+        { "name": "Premium Monthly", "amount": 19.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.myfitnesspal.com/premium",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Tier free con anuncios.",
+      "aliases": ["My Fitness Pal"],
+      "priority": "P1"
+    },
+    {
+      "id": "apple-fitness-plus",
+      "provider": "Apple",
+      "service_name": "Apple Fitness+",
+      "category": "Fitness y salud",
+      "subcategory": "Fitness",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Monthly", "amount": 9.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "Annual", "amount": 79.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": null, "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.apple.com/apple-fitness-plus",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Incluido en Apple One Premier.",
+      "aliases": ["Apple Fitness Plus"],
+      "priority": "P2"
+    },
+    {
+      "id": "calm",
+      "provider": "Calm",
+      "service_name": "Calm",
+      "category": "Fitness y salud",
+      "subcategory": "Meditación y sueño",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Annual (iOS)", "amount": 69.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "~$5.83/mes", "included": null },
+        { "name": "Annual (web)", "amount": 79.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "~$6.67/mes", "included": null },
+        { "name": "Monthly", "amount": 16.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "Family Annual", "amount": 99.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "Hasta 6 miembros", "included": null },
+        { "name": "Lifetime", "amount": 399.99, "currency": "USD", "period": "one_time", "per_user": false, "billed": "one_time", "note": "Pago único", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.calm.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Meditación, sleep stories, relajación.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "headspace",
+      "provider": "Headspace",
+      "service_name": "Headspace",
+      "category": "Fitness y salud",
+      "subcategory": "Meditación y sueño",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Monthly", "amount": 12.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "Annual", "amount": 69.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "~$5.83/mes", "included": null },
+        { "name": "Family", "amount": 99.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "Hasta 6 cuentas", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.headspace.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": null,
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "medium",
+      "provider": "Medium",
+      "service_name": "Medium",
+      "category": "Noticias y lectura",
+      "subcategory": "Blogs y artículos",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Monthly", "amount": 5, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "Annual", "amount": 50, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "~$4.17/mes", "included": null },
+        { "name": "Friend of Medium Annual", "amount": 150, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "~$12.50/mes; apoya a writers", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://medium.com/subscription",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global",
+      "notes": null,
+      "aliases": [],
+      "priority": "P2"
+    },
+    {
+      "id": "nyt",
+      "provider": "The New York Times",
+      "service_name": "New York Times",
+      "category": "Noticias y lectura",
+      "subcategory": "Periódicos",
+      "billing_model": "localized_subscription",
+      "plans": [
+        { "name": "Games", "amount": 5, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "Cooking", "amount": 5, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "Wirecutter", "amount": 5, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "All Access", "amount": 25, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "News + Games + Cooking + Wirecutter + The Athletic", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.nytimes.com/subscription",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Precios por 4 semanas.",
+      "aliases": ["NYT", "New York Times"],
+      "priority": "P1"
+    },
+    {
+      "id": "wsj",
+      "provider": "Dow Jones",
+      "service_name": "Wall Street Journal",
+      "category": "Noticias y lectura",
+      "subcategory": "Periódicos",
+      "billing_model": "localized_subscription",
+      "plans": [
+        { "name": "Digital Monthly", "amount": 12.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "Digital Annual", "amount": 155.88, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "~$12.99/mes", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.wsj.com/subscribe",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": null,
+      "aliases": ["Wall Street Journal"],
+      "priority": "P2"
+    },
+    {
+      "id": "washington-post",
+      "provider": "The Washington Post",
+      "service_name": "Washington Post",
+      "category": "Noticias y lectura",
+      "subcategory": "Periódicos",
+      "billing_model": "localized_subscription",
+      "plans": [
+        { "name": "Core Annual", "amount": 140, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "~$11.67/mes", "included": null },
+        { "name": "Premium Annual", "amount": 190, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "Sin anuncios + 3 cuentas extra + archivo", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://subscribe.washingtonpost.com",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Intro $4/4-semanas por primeros 6 meses.",
+      "aliases": ["WaPo"],
+      "priority": "P2"
+    },
+    {
+      "id": "kindle-unlimited",
+      "provider": "Amazon",
+      "service_name": "Kindle Unlimited",
+      "category": "Noticias y lectura",
+      "subcategory": "Ebooks",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Monthly", "amount": 11.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Lectura ilimitada dentro del catálogo", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.amazon.com/kindle-unlimited",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Family sharing via Amazon Household.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "audible",
+      "provider": "Amazon",
+      "service_name": "Audible",
+      "category": "Noticias y lectura",
+      "subcategory": "Audiolibros",
+      "billing_model": "credits_subscription",
+      "plans": [
+        { "name": "Standard", "amount": 8.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Acceso a catálogo + 1 crédito/mes", "included": null },
+        { "name": "Premium Plus", "amount": 14.95, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "1 crédito/mes + descuentos + acceso premium", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.audible.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Créditos se acumulan (rollover).",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "scribd",
+      "provider": "Scribd",
+      "service_name": "Scribd",
+      "category": "Noticias y lectura",
+      "subcategory": "Ebooks y audiolibros",
+      "billing_model": "credits_subscription",
+      "plans": [
+        { "name": "Standard", "amount": 11.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "1 unlock/mes + catálogo base ~20,000 títulos", "included": null },
+        { "name": "Plus", "amount": 16.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "3 unlocks/mes", "included": null },
+        { "name": "Deluxe", "amount": 28.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "5 unlocks/mes; solo US", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.scribd.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Modelo cambió de ilimitado a credits en 2024.",
+      "aliases": ["Everand"],
+      "priority": "P2"
+    },
+    {
+      "id": "discord-nitro",
+      "provider": "Discord",
+      "service_name": "Discord Nitro",
+      "category": "Social y comunicación",
+      "subcategory": "Chat y comunidades",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Nitro Basic", "amount": 2.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Emoji custom, archivo 50MB, avatar animado", "included": null },
+        { "name": "Nitro", "amount": 9.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "HD streaming 1080p/60fps, 2 Server Boosts, uploads 500MB", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://discord.com/nitro",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Plan free disponible.",
+      "aliases": ["Discord"],
+      "priority": "P1"
+    },
+    {
+      "id": "telegram-premium",
+      "provider": "Telegram",
+      "service_name": "Telegram Premium",
+      "category": "Social y comunicación",
+      "subcategory": "Chat",
+      "billing_model": "localized_subscription",
+      "plans": [
+        { "name": "Monthly", "amount": 4.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Precio varía por región; más barato vía @PremiumBot", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://telegram.org/faq_premium",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_reference",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Suscripción anual con descuento. Precios localizados.",
+      "aliases": [],
+      "priority": "P2"
+    },
+    {
+      "id": "linkedin-premium",
+      "provider": "LinkedIn",
+      "service_name": "LinkedIn Premium",
+      "category": "Social y comunicación",
+      "subcategory": "Networking profesional",
+      "billing_model": "localized_subscription",
+      "plans": [
+        { "name": "Career Monthly", "amount": 39.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "InMail, Who viewed your profile, Learning", "included": null },
+        { "name": "Business Monthly", "amount": 59.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.linkedin.com/premium",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_reference",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Incluye LinkedIn Learning. Trial de 1 mes.",
+      "aliases": ["LinkedIn Premium Career"],
+      "priority": "P2"
+    },
+    {
+      "id": "ynab",
+      "provider": "YNAB",
+      "service_name": "YNAB",
+      "category": "Finanzas",
+      "subcategory": "Presupuesto personal",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Annual", "amount": 109, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "~$9.08/mes", "included": null },
+        { "name": "Monthly", "amount": 14.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.ynab.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global",
+      "notes": "You Need A Budget. Trial 34 días.",
+      "aliases": ["You Need A Budget"],
+      "priority": "P2"
+    },
+    {
+      "id": "rocket-money",
+      "provider": "Rocket Money",
+      "service_name": "Rocket Money",
+      "category": "Finanzas",
+      "subcategory": "Gestión de suscripciones",
+      "billing_model": "usage_based",
+      "plans": [],
+      "usage_rates": [],
+      "source_url": "https://www.rocketmoney.com",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "variable_official",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Plan free disponible. Premium: $12-$15/mes (usuario elige). Cancela suscripciones por una comisión del 40% del ahorro.",
+      "aliases": ["Truebill"],
+      "priority": "P2"
+    },
+    {
+      "id": "apple-one",
+      "provider": "Apple",
+      "service_name": "Apple One",
+      "category": "Bundles",
+      "subcategory": "Apple ecosystem",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Individual", "amount": 21.95, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Apple Music + TV+ + Arcade + iCloud+ 50GB", "included": null },
+        { "name": "Family", "amount": 28.95, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Hasta 6 miembros; iCloud+ 200GB", "included": null },
+        { "name": "Premier", "amount": 37.95, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Todo + Apple Fitness+ + Apple News+ + iCloud+ 2TB", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.apple.com/apple-one",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Bundle que reemplaza múltiples suscripciones de Apple.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "peacock",
+      "provider": "NBCUniversal",
+      "service_name": "Peacock",
+      "category": "Streaming y entretenimiento",
+      "subcategory": "Películas y series",
+      "billing_model": "localized_subscription",
+      "plans": [
+        { "name": "Premium", "amount": 10.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Con anuncios", "included": null },
+        { "name": "Premium Plus", "amount": 16.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Sin anuncios + descargas + live", "included": null },
+        { "name": "Premium Annual", "amount": 109.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": null, "included": null },
+        { "name": "Premium Plus Annual", "amount": 169.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": null, "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.peacocktv.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Tier Select con anuncios más barato disponible en algunos planes.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "hulu",
+      "provider": "Disney",
+      "service_name": "Hulu",
+      "category": "Streaming y entretenimiento",
+      "subcategory": "TV y series",
+      "billing_model": "localized_subscription",
+      "plans": [
+        { "name": "With Ads", "amount": 11.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "No Ads", "amount": 18.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "With Ads Annual", "amount": 119.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": null, "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.hulu.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Integrándose en Disney+ como app unificada.",
+      "aliases": [],
+      "priority": "P1"
+    },
+    {
+      "id": "espn-plus",
+      "provider": "Disney",
+      "service_name": "ESPN+",
+      "category": "Streaming y entretenimiento",
+      "subcategory": "Deportes",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Monthly", "amount": 11.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "Annual", "amount": 119.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": null, "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://espn.com/plus",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Incluido en Disney Bundle.",
+      "aliases": ["ESPN Plus"],
+      "priority": "P2"
+    },
+    {
+      "id": "evernote",
+      "provider": "Evernote",
+      "service_name": "Evernote",
+      "category": "Productividad",
+      "subcategory": "Notas",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Personal", "amount": 14.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "Professional", "amount": 17.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://evernote.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_reference",
+      "user_confirmation_required": true,
+      "regions": "localized",
+      "notes": "Plan free limitado disponible.",
+      "aliases": [],
+      "priority": "P2"
+    },
+    {
+      "id": "todoist",
+      "provider": "Doist",
+      "service_name": "Todoist",
+      "category": "Productividad",
+      "subcategory": "Tareas",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Pro", "amount": 4, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "300 proyectos activos", "included": null },
+        { "name": "Pro Annual", "amount": 36, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": null, "included": null },
+        { "name": "Business", "amount": 6, "currency": "USD", "period": "month", "per_user": true, "billed": "monthly", "note": "Por usuario", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://todoist.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global",
+      "notes": "Plan free disponible.",
+      "aliases": [],
+      "priority": "P2"
+    },
+    {
+      "id": "proton-unlimited",
+      "provider": "Proton",
+      "service_name": "Proton Unlimited",
+      "category": "Productividad",
+      "subcategory": "Email + VPN + storage",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Monthly", "amount": 9.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "Mail + VPN + Drive 500GB + Passwords", "included": null },
+        { "name": "Annual", "amount": 95.88, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": "~$7.99/mes", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://proton.me/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global",
+      "notes": "Reemplaza VPN + email + storage + password manager.",
+      "aliases": ["Proton Mail", "Proton Drive"],
+      "priority": "P2"
+    },
+    {
+      "id": "fastmail",
+      "provider": "Fastmail",
+      "service_name": "Fastmail",
+      "category": "Productividad",
+      "subcategory": "Email",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Basic", "amount": 3, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "2GB", "included": null },
+        { "name": "Standard", "amount": 5, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "30GB", "included": null },
+        { "name": "Professional", "amount": 9, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": "100GB", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.fastmail.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global",
+      "notes": null,
+      "aliases": [],
+      "priority": "P3"
+    },
+    {
+      "id": "ifttt",
+      "provider": "IFTTT",
+      "service_name": "IFTTT Pro",
+      "category": "Productividad",
+      "subcategory": "Automatización personal",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Pro", "amount": 3.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null },
+        { "name": "Pro+", "amount": 12.99, "currency": "USD", "period": "month", "per_user": false, "billed": "monthly", "note": null, "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://ifttt.com/plans",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_reference",
+      "user_confirmation_required": true,
+      "regions": "global",
+      "notes": "Plan free limitado.",
+      "aliases": [],
+      "priority": "P3"
+    },
+    {
+      "id": "pcloud",
+      "provider": "pCloud",
+      "service_name": "pCloud",
+      "category": "Cloud storage",
+      "subcategory": "Almacenamiento en la nube",
+      "billing_model": "fixed_subscription",
+      "plans": [
+        { "name": "Premium (500 GB) Annual", "amount": 49.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": null, "included": null },
+        { "name": "Premium Plus (2 TB) Annual", "amount": 99.99, "currency": "USD", "period": "year", "per_user": false, "billed": "annual", "note": null, "included": null },
+        { "name": "Lifetime 2 TB", "amount": 399, "currency": "USD", "period": "one_time", "per_user": false, "billed": "one_time", "note": "Pago único; sin recurrencia", "included": null }
+      ],
+      "usage_rates": [],
+      "source_url": "https://www.pcloud.com/pricing",
+      "source_type": "official",
+      "last_verified_at": "2026-08-06",
+      "audit_status": "verified_exact",
+      "user_confirmation_required": true,
+      "regions": "global",
+      "notes": "Lifetime plan: se amortiza en ~3.3 años vs iCloud+.",
+      "aliases": [],
+      "priority": "P2"
+    }
+  ]
+}

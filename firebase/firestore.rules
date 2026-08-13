@@ -1,0 +1,21 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Price snapshots — readable by all authenticated users
+    match /price_snapshots/{providerName} {
+      allow read: if request.auth != null;
+      allow write: if false; // Only Cloud Functions write
+    }
+
+    // Price watch logs — readable by all authenticated users
+    match /price_watch_logs/{logId} {
+      allow read: if request.auth != null;
+      allow write: if false; // Only Cloud Functions write
+    }
+
+    // User FCM tokens — users can only read/write their own token
+    match /user_tokens/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+  }
+}
