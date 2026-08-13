@@ -8,7 +8,7 @@
     "userInterfaceStyle": "light",
     "scheme": "stack",
     "updates": {
-      "url": "https://u.expo.dev/your-project-id"
+      "url": "https://u.expo.dev/6a512f24-eece-4880-a1cf-34b88db23f83"
     },
     "runtimeVersion": {
       "policy": "appVersion"
@@ -45,6 +45,13 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "6a512f24-eece-4880-a1cf-34b88db23f83"
+      }
+    },
+    "owner": "juanmount"
   }
 }
