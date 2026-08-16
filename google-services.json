@@ -14,11 +14,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "1098265338774-najqdsslsub3e9d84kqmfvgc9jn2tcem.apps.googleusercontent.com",
+          "client_id": "1098265338774-8nph3s9mag0me558ogk5tdvtt9ia5jmv.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.juanomountford.stack",
-            "certificate_hash": "8b0d9d4df2358ecacd0ada6ff00fd5d4f6333266"
+            "certificate_hash": "756a619d572c24a5686c425829cbce1a36cea41d"
           }
         },
         {

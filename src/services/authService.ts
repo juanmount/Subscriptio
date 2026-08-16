@@ -14,7 +14,7 @@ import { auth } from './firebase';
 export type { User };
 
 GoogleSignin.configure({
-  webClientId: process.env.EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID,
+  webClientId: process.env.EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID ?? '1098265338774-imma5e7f75vjba56nrgug6bo66inefka.apps.googleusercontent.com',
 });
 
 export async function signInWithGoogle(): Promise<User> {
