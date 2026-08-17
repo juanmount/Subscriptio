@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { supabase, getSupabaseAuthUid } from './supabaseClient';
+import { logPaywallPurchased, logPaywallShown, logPaywallDismissed } from './analytics';
 
 const IS_PAID_KEY = 'is_paid';
 
@@ -22,7 +23,14 @@ export const usePaywallStore = create<PaywallState>((set) => ({
   subCount: 0,
   setIsPaid: (paid) => set({ isPaid: paid }),
   setSubCount: (count) => set({ subCount: count }),
-  setShowPaywall: (show) => set({ showPaywall: show }),
+  setShowPaywall: (show) => {
+    set({ showPaywall: show });
+    if (show) {
+      logPaywallShown(0);
+    } else {
+      logPaywallDismissed();
+    }
+  },
 
   checkPaidStatus: async () => {
     const uid = getSupabaseAuthUid();
@@ -45,6 +53,7 @@ export const usePaywallStore = create<PaywallState>((set) => ({
     await supabase
       .from('settings')
       .upsert({ user_id: uid, key: IS_PAID_KEY, value: 'true' });
+    await logPaywallPurchased();
     set({ isPaid: true, showPaywall: false });
   },
 }));

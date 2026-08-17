@@ -28,6 +28,7 @@ import { SubscriptionFormSchema, type SubscriptionFormValues, FREQUENCIES } from
 import { useAddSubscriptionStore } from '@/services/addSubscriptionStore';
 import { insertSubscription, updateSubscription, listSubscriptions, type SubscriptionWithRelations } from '@/data/repositories/subscriptions';
 import { usePaywallStore } from '@/services/paywallStore';
+import { logAddSubscription } from '@/services/analytics';
 import { listCategories, type CategoryRow } from '@/data/repositories/categories';
 import { getPlansForProvider, type PlanRow } from '@/data/repositories/providers';
 import { listCards, insertCard, type CardRow } from '@/data/repositories/cards';
@@ -207,6 +208,8 @@ export default function AgregarFormScreen() {
         const allSubs = await listSubscriptions();
         const count = allSubs.length;
         const name = values.customName ?? selectedProvider?.name ?? '';
+        const parsedPrice = parsePriceInput(values.priceInput);
+        await logAddSubscription(name, parsedPrice ? parsedPrice / 100 : 0);
         setSavedName(name);
         setSavedCount(count);
         setShowPostSave(true);

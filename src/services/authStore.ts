@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { onAuthChanged, signInWithGoogle, signInWithEmail, signUpWithEmail, signOut, type User } from './authService';
 import { setSupabaseAuthUid } from './supabaseClient';
+import { logLogin, logSignUp, setUserId as setAnalyticsUserId } from './analytics';
 
 interface AuthState {
   user: User | null;
@@ -28,6 +29,7 @@ export const useAuthStore = create<AuthState>((set) => ({
     set({ isLoading: true });
     try {
       await signInWithEmail(email, password);
+      await logLogin('email');
     } finally {
       set({ isLoading: false });
     }
@@ -37,6 +39,7 @@ export const useAuthStore = create<AuthState>((set) => ({
     set({ isLoading: true });
     try {
       await signUpWithEmail(email, password);
+      await logSignUp('email');
     } finally {
       set({ isLoading: false });
     }
@@ -46,6 +49,7 @@ export const useAuthStore = create<AuthState>((set) => ({
     set({ isLoading: true });
     try {
       await signInWithGoogle();
+      await logLogin('google');
     } finally {
       set({ isLoading: false });
     }
@@ -65,6 +69,7 @@ export const useAuthStore = create<AuthState>((set) => ({
   init: () => {
     const unsubscribe = onAuthChanged((user) => {
       setSupabaseAuthUid(user?.uid ?? null);
+      setAnalyticsUserId(user?.uid ?? null);
       set({ user, isInitialized: true });
     });
     return unsubscribe;
