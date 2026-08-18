@@ -36,7 +36,7 @@ import { toMinorUnits, parsePriceInput, formatCurrency } from '@/utils/money';
 import { getCurrencyMinorUnit } from '@/data/repositories/currencies';
 import { nextRenewalDate, frequencyLabel } from '@/utils/date';
 import type { Frequency } from '@/domain/types';
-import { t } from '@/i18n';
+import { t, getLocale } from '@/i18n';
 
 const CURRENCIES = ['USD', 'ARS', 'EUR', 'BRL', 'MXN', 'CLP', 'COP', 'GBP'];
 
@@ -504,7 +504,7 @@ export default function AgregarFormScreen() {
                 <View style={styles.infoCellText}>
                   <Text style={styles.infoCellLabel}>{t('home.upcomingRenewals')}</Text>
                   <Text style={styles.infoCellValue}>
-                    {renewalDate.toLocaleDateString('es-AR', { day: 'numeric', month: 'short', year: 'numeric' })}
+                    {renewalDate.toLocaleDateString(getLocale(), { day: 'numeric', month: 'short', year: 'numeric' })}
                   </Text>
                 </View>
                 <Ionicons name="chevron-forward" size={14} color={Colors.textTertiary} />
@@ -625,7 +625,7 @@ export default function AgregarFormScreen() {
                 mode="date"
                 display="spinner"
                 minimumDate={new Date()}
-                locale="es-AR"
+                locale={getLocale()}
                 onChange={(_event: DateTimePickerEvent, date?: Date) => {
                   if (date) setRenewalDate(date);
                 }}

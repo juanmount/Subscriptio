@@ -79,6 +79,41 @@ export function getSupportedLocales(): AppLocale[] {
   return SUPPORTED;
 }
 
+const LOCALE_KEY = 'preferred_locale';
+
+export async function savePreferredLocale(locale: AppLocale): Promise<void> {
+  try {
+    const { getSupabaseAuthUid, supabase } = require('../services/supabaseClient');
+    const uid = getSupabaseAuthUid();
+    if (!uid) return;
+    await supabase
+      .from('settings')
+      .upsert({ user_id: uid, key: LOCALE_KEY, value: locale });
+  } catch {
+    // ignore — non-critical
+  }
+}
+
+export async function loadPreferredLocale(): Promise<AppLocale | null> {
+  try {
+    const { getSupabaseAuthUid, supabase } = require('../services/supabaseClient');
+    const uid = getSupabaseAuthUid();
+    if (!uid) return null;
+    const { data } = await supabase
+      .from('settings')
+      .select('value')
+      .eq('user_id', uid)
+      .eq('key', LOCALE_KEY)
+      .maybeSingle();
+    if (data?.value && SUPPORTED.includes(data.value as AppLocale)) {
+      return data.value as AppLocale;
+    }
+  } catch {
+    // ignore — non-critical
+  }
+  return null;
+}
+
 export function t(key: string, options?: Record<string, any>): string {
   return i18n.t(key, options) as string;
 }

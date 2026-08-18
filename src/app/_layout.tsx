@@ -8,6 +8,7 @@ import { useAuthStore } from '@/services/authStore';
 import { usePathname } from 'expo-router';
 import { runSeedIfNeeded } from '@/data/seed/supabase-seed';
 import { loadCurrencies } from '@/data/repositories/currencies';
+import { loadPreferredLocale, setLocale } from '@/i18n';
 
 function AuthGate({ children }: { children: React.ReactNode }) {
   const { user, isInitialized, init } = useAuthStore();
@@ -30,6 +31,7 @@ function AuthGate({ children }: { children: React.ReactNode }) {
     if (user) {
       loadCurrencies().catch((err) => console.error('[Currencies]', err));
       runSeedIfNeeded().catch((err) => console.error('[Seed]', err));
+      loadPreferredLocale().then((saved) => { if (saved) setLocale(saved); }).catch(() => {});
     }
   }, [user, isInitialized, pathname]);
 

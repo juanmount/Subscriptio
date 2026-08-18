@@ -19,7 +19,7 @@ import Constants from 'expo-constants';
 import { AppHeader } from '@/ui/components/AppHeader';
 import { ScreenBackground } from '@/ui/components/ScreenBackground';
 import { Colors, Spacing, Typography, Radius } from '@/ui/theme';
-import { t, getLocale, type AppLocale } from '@/i18n';
+import { t, getLocale, setLocale, savePreferredLocale, type AppLocale } from '@/i18n';
 import { usePriceWatchStore } from '@/services/priceWatchStore';
 import { useAuthStore } from '@/services/authStore';
 import { usePaywallStore } from '@/services/paywallStore';
@@ -61,7 +61,7 @@ export default function MasScreen() {
   const [showDataDisclaimer, setShowDataDisclaimer] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
   const [showMoreAccount, setShowMoreAccount] = useState(false);
-  const currentLocale = getLocale();
+  const [currentLocale, setCurrentLocale] = useState<AppLocale>(getLocale());
 
   useEffect(() => {
     loadAlerts();
@@ -156,9 +156,11 @@ export default function MasScreen() {
     Linking.openURL(APP_STORE_URL);
   };
 
-  const handleLanguageChange = (locale: AppLocale) => {
+  const handleLanguageChange = async (locale: AppLocale) => {
     setShowLangModal(false);
-    Alert.alert(t('more.language'), t('more.comingSoon'));
+    setLocale(locale);
+    setCurrentLocale(locale);
+    await savePreferredLocale(locale);
   };
 
   const settingsGroups: { title: string; items: SettingItem[] }[] = [

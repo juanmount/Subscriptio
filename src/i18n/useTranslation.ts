@@ -1,12 +1,15 @@
 import { useState, useCallback } from 'react';
-import { i18n, setLocale, getLocale, type AppLocale } from './index';
+import { i18n, setLocale, getLocale, savePreferredLocale, type AppLocale } from './index';
 
 export function useTranslation() {
   const [locale, setLocaleState] = useState<AppLocale>(getLocale());
+  const [, forceRefresh] = useState(0);
 
-  const changeLocale = useCallback((newLocale: AppLocale) => {
+  const changeLocale = useCallback(async (newLocale: AppLocale) => {
     setLocale(newLocale);
     setLocaleState(newLocale);
+    await savePreferredLocale(newLocale);
+    forceRefresh((n) => n + 1);
   }, []);
 
   return {
