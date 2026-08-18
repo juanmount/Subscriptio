@@ -28,6 +28,7 @@ import { OnboardingModal } from '@/ui/components/OnboardingModal';
 import { PaywallModal } from '@/ui/components/PaywallModal';
 import { hasCompletedOnboarding, getPreferredCategories, saveOnboardingPreferences } from '@/services/onboardingPrefs';
 import { usePaywallStore } from '@/services/paywallStore';
+import { useAuthStore } from '@/services/authStore';
 import { listCategories, type CategoryRow } from '@/data/repositories/categories';
 import { totalMonthly, totalAnnual, totalMonthlyByCurrency, totalAnnualByCurrency, groupByCategory, upcomingRenewals } from '@/domain/finance';
 import type { Subscription } from '@/domain/types';
@@ -124,6 +125,8 @@ export default function HomeScreen() {
   const [showOnboarding, setShowOnboarding] = useState(false);
   const [onboardingCategories, setOnboardingCategories] = useState<CategoryRow[]>([]);
   const { isPaid, showPaywall, setShowPaywall, checkPaidStatus, setSubCount } = usePaywallStore();
+  const { user } = useAuthStore();
+  const userDisplayName = user?.displayName ?? (user?.email ? user.email.split('@')[0].charAt(0).toUpperCase() + user.email.split('@')[0].slice(1) : '');
   const { alerts, unreadCount, loadAlerts, markAsRead, dismiss } = usePriceWatchStore();
 
   useFocusEffect(
@@ -141,14 +144,12 @@ export default function HomeScreen() {
 
       // Check onboarding
       (async () => {
-        const cats = await listCategories();
-        setOnboardingCategories(cats);
-        setShowOnboarding(true); // TODO: remove this force after testing
-        // const completed = await hasCompletedOnboarding();
-        // if (!completed) {
-        //   setOnboardingCategories(cats);
-        //   setShowOnboarding(true);
-        // }
+        const completed = await hasCompletedOnboarding();
+        if (!completed) {
+          const cats = await listCategories();
+          setOnboardingCategories(cats);
+          setShowOnboarding(true);
+        }
       })();
 
       // Update sub count for paywall
@@ -338,7 +339,7 @@ export default function HomeScreen() {
 
         {/* Welcome block */}
         <View style={styles.welcomeArea}>
-          <Text style={styles.welcomeGreeting}>{t('home.greeting')}</Text>
+          <Text style={styles.welcomeGreeting}>{t('home.greeting', { name: userDisplayName })}</Text>
           <Text style={styles.welcomeTitle}>{t('home.todaySummary')}</Text>
           <Text style={styles.welcomeSubtitle}>{t('home.subtitle')}</Text>
         </View>

@@ -61,7 +61,7 @@ export const enUS = {
   'register.signIn': 'Sign in',
 
   // ─── Home ───
-  'home.greeting': 'Hi, Juan Cruz',
+  'home.greeting': 'Hi, {{name}}',
   'home.todaySummary': 'Your stack',
   'home.subtitle': 'This is what you\'re paying right now',
   'home.monthlyTotal': 'Your monthly stack',

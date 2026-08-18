@@ -61,7 +61,7 @@ export const esAR = {
   'register.signIn': 'Iniciar sesión',
 
   // ─── Home ───
-  'home.greeting': 'Hola, Juan Cruz',
+  'home.greeting': 'Hola, {{name}}',
   'home.todaySummary': 'Tu stack',
   'home.subtitle': 'Esto es lo que estás pagando ahora mismo',
   'home.monthlyTotal': 'Tu stack mensual',

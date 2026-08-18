@@ -61,7 +61,7 @@ export const ptBR = {
   'register.signIn': 'Entrar',
 
   // ─── Home ───
-  'home.greeting': 'Olá, Juan Cruz',
+  'home.greeting': 'Olá, {{name}}',
   'home.todaySummary': 'Seu stack',
   'home.subtitle': 'Isso é o que você está pagando agora',
   'home.monthlyTotal': 'Seu stack mensal',
