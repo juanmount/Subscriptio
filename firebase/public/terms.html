@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STACK — Términos de Servicio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0F0A1F; color: #E6E0F0; min-height: 100vh; padding: 40px 20px; }
+    .container { max-width: 640px; margin: 0 auto; }
+    .logo { font-size: 28px; font-weight: 800; letter-spacing: -1px; margin-bottom: 4px; background: linear-gradient(135deg, #9B7BFF, #6B52E0); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    h1 { font-size: 24px; margin: 24px 0 8px; color: #E6E0F0; }
+    h2 { font-size: 18px; margin: 28px 0 8px; color: #9B7BFF; }
+    p, li { font-size: 15px; line-height: 1.7; color: #C4BDD4; margin-bottom: 8px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    .updated { font-size: 13px; color: #6B6480; margin-bottom: 24px; }
+    .lang-switch { display: flex; gap: 8px; margin-bottom: 24px; }
+    .lang-switch a { padding: 6px 14px; border-radius: 20px; background: #1A1530; color: #9088B0; text-decoration: none; font-size: 13px; font-weight: 600; }
+    .lang-switch a.active { background: #6B52E0; color: #fff; }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+    .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #252045; color: #6B6480; font-size: 13px; text-align: center; }
+    a.back { color: #9B7BFF; text-decoration: none; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">STACK</div>
+    <a class="back" href="/">← Volver</a>
+
+    <div class="lang-switch">
+      <a href="#" class="active" onclick="switchLang('es',event)">Español</a>
+      <a href="#" onclick="switchLang('en',event)">English</a>
+      <a href="#" onclick="switchLang('pt',event)">Português</a>
+    </div>
+
+    <!-- ESPAÑOL -->
+    <div class="lang-section active" id="es">
+      <h1>Términos de Servicio</h1>
+      <p class="updated">Última actualización: 18 de agosto de 2025</p>
+
+      <h2>1. Descripción del Servicio</h2>
+      <p>STACK es una aplicación móvil que permite a los usuarios rastrear y organizar sus suscripciones y servicios recurrentes. La app muestra totales mensuales y anuales, recordatorios de renovación, alertas de cambios de precios y una radiografía financiera del gasto en suscripciones.</p>
+      <p>STACK <strong>no</strong> realiza transacciones, no solicita datos bancarios, números de tarjetas ni contraseñas de servicios. Toda la información de precios es cargada manualmente por el usuario o sugerida desde nuestro catálogo público.</p>
+
+      <h2>2. Cuentas de Usuario</h2>
+      <p>Para usar STACK necesitás una cuenta. Podés registrarte con Google o con email y contraseña. Sos responsable de mantener la confidencialidad de tus credenciales.</p>
+
+      <h2>3. Pago y Licencia</h2>
+      <p>STACK funciona con un modelo de pago único de <strong>USD 9.99</strong>. Una vez pagado, tenés acceso completo a todas las funcionalidades de la app de forma permanente, sin suscripción ni pagos recurrentes.</p>
+      <p>El pago se procesa a través de Google Play Billing (Android) o App Store In-App Purchase (iOS). No almacenamos información de pago en nuestros servidores.</p>
+
+      <h2>4. Uso Aceptable</h2>
+      <ul>
+        <li>No uses STACK para actividades ilegales.</li>
+        <li>No intentes acceder a datos de otros usuarios.</li>
+        <li>No revendas, redistribuyas o hagas ingeniería inversa de la app.</li>
+      </ul>
+
+      <h2>5. Datos del Usuario</h2>
+      <p>Tus datos (suscripciones, tarjetas, configuraciones) se almacenan en servidores seguros con políticas de Row Level Security. Solo vos podés acceder a tus datos. Podés eliminar tu cuenta y todos tus datos en cualquier momento desde la app.</p>
+
+      <h2>6. Limitación de Responsabilidad</h2>
+      <p>STACK se provee "tal cual" sin garantías de ningún tipo. Los precios mostrados son informativos y pueden no reflejar el precio exacto que pagás. No nos hacemos responsables de decisiones financieras tomadas en base a la información de la app.</p>
+
+      <h2>7. Cambios a estos Términos</h2>
+      <p>Podemos actualizar estos términos en cualquier momento. Te notificaremos desde la app si hay cambios significativos.</p>
+
+      <h2>8. Contacto</h2>
+      <p>Para consultas sobre estos términos: <a href="mailto:soporte@stack-app.com" style="color:#9B7BFF">soporte@stack-app.com</a></p>
+    </div>
+
+    <!-- ENGLISH -->
+    <div class="lang-section" id="en">
+      <h1>Terms of Service</h1>
+      <p class="updated">Last updated: August 18, 2025</p>
+
+      <h2>1. Service Description</h2>
+      <p>STACK is a mobile application that allows users to track and organize their subscriptions and recurring services. The app shows monthly and annual totals, renewal reminders, price change alerts, and a financial overview of subscription spending.</p>
+      <p>STACK does <strong>not</strong> process transactions, request banking data, card numbers, or service passwords. All pricing information is manually entered by the user or suggested from our public catalog.</p>
+
+      <h2>2. User Accounts</h2>
+      <p>To use STACK you need an account. You can sign up with Google or email and password. You are responsible for maintaining the confidentiality of your credentials.</p>
+
+      <h2>3. Payment and License</h2>
+      <p>STACK operates on a one-time payment model of <strong>USD 9.99</strong>. Once paid, you get full access to all app features permanently, with no subscription or recurring payments.</p>
+      <p>Payment is processed through Google Play Billing (Android) or App Store In-App Purchase (iOS). We do not store payment information on our servers.</p>
+
+      <h2>4. Acceptable Use</h2>
+      <ul>
+        <li>Do not use STACK for illegal activities.</li>
+        <li>Do not attempt to access other users' data.</li>
+        <li>Do not resell, redistribute, or reverse engineer the app.</li>
+      </ul>
+
+      <h2>5. User Data</h2>
+      <p>Your data (subscriptions, cards, settings) is stored on secure servers with Row Level Security policies. Only you can access your data. You can delete your account and all your data at any time from the app.</p>
+
+      <h2>6. Limitation of Liability</h2>
+      <p>STACK is provided "as is" without warranties of any kind. Prices shown are informative and may not reflect the exact amount you pay. We are not liable for financial decisions made based on the app's information.</p>
+
+      <h2>7. Changes to These Terms</h2>
+      <p>We may update these terms at any time. We will notify you through the app if there are significant changes.</p>
+
+      <h2>8. Contact</h2>
+      <p>For questions about these terms: <a href="mailto:soporte@stack-app.com" style="color:#9B7BFF">soporte@stack-app.com</a></p>
+    </div>
+
+    <!-- PORTUGUÊS -->
+    <div class="lang-section" id="pt">
+      <h1>Termos de Serviço</h1>
+      <p class="updated">Última atualização: 18 de agosto de 2025</p>
+
+      <h2>1. Descrição do Serviço</h2>
+      <p>STACK é um aplicativo móvel que permite aos usuários rastrear e organizar suas assinaturas e serviços recorrentes. O app mostra totais mensais e anuais, lembretes de renovação, alertas de mudança de preços e uma radiografia financeira dos gastos com assinaturas.</p>
+      <p>STACK <strong>não</strong> realiza transações, não solicita dados bancários, números de cartão ou senhas de serviços. Todas as informações de preços são inseridas manualmente pelo usuário ou sugeridas a partir do nosso catálogo público.</p>
+
+      <h2>2. Contas de Usuário</h2>
+      <p>Para usar o STACK você precisa de uma conta. Você pode se cadastrar com Google ou e-mail e senha. Você é responsável por manter a confidencialidade de suas credenciais.</p>
+
+      <h2>3. Pagamento e Licença</h2>
+      <p>STACK opera com um modelo de pagamento único de <strong>USD 9.99</strong>. Após o pagamento, você tem acesso completo a todos os recursos do app permanentemente, sem assinatura ou pagamentos recorrentes.</p>
+      <p>O pagamento é processado através do Google Play Billing (Android) ou App Store In-App Purchase (iOS). Não armazenamos informações de pagamento em nossos servidores.</p>
+
+      <h2>4. Uso Aceitável</h2>
+      <ul>
+        <li>Não use o STACK para atividades ilegais.</li>
+        <li>Não tente acessar dados de outros usuários.</li>
+        <li>Não revenda, redistribua ou faça engenharia reversa do app.</li>
+      </ul>
+
+      <h2>5. Dados do Usuário</h2>
+      <p>Seus dados (assinaturas, cartões, configurações) são armazenados em servidores seguros com políticas de Row Level Security. Apenas você pode acessar seus dados. Você pode excluir sua conta e todos os seus dados a qualquer momento no app.</p>
+
+      <h2>6. Limitação de Responsabilidade</h2>
+      <p>STACK é fornecido "como está" sem garantias de qualquer tipo. Os preços mostrados são informativos e podem não refletir o valor exato que você paga. Não nos responsabilizamos por decisões financeiras tomadas com base nas informações do app.</p>
+
+      <h2>7. Alterações nestes Termos</h2>
+      <p>Podemos atualizar estes termos a qualquer momento. Notificaremos você através do app se houver mudanças significativas.</p>
+
+      <h2>8. Contato</h2>
+      <p>Para dúvidas sobre estes termos: <a href="mailto:soporte@stack-app.com" style="color:#9B7BFF">soporte@stack-app.com</a></p>
+    </div>
+
+    <div class="footer">© 2025 STACK. All rights reserved.</div>
+  </div>
+
+  <script>
+    function switchLang(lang, e) {
+      e.preventDefault();
+      document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+      document.querySelectorAll('.lang-switch a').forEach(a => a.classList.remove('active'));
+      e.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>

@@ -218,6 +218,7 @@ export const esAR = {
   'more.legal': 'Legal',
   'more.terms': 'Términos de servicio',
   'more.privacyPolicy': 'Política de privacidad',
+  'more.refundPolicy': 'Política de reembolso',
   'more.dataDisclaimer': 'Sobre tus datos',
   'more.dataDisclaimerTitle': 'Cómo tratamos tus datos',
   'more.dataDisclaimerBody': 'STACK no pide ni guarda datos bancarios reales, números de tarjeta ni contraseñas de tus servicios. Cargás vos manualmente cuánto pagás y cada cuándo. Tus datos se guardan en tu cuenta y solo vos podés verlos o borrarlos.',

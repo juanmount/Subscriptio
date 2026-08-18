@@ -218,6 +218,7 @@ export const enUS = {
   'more.legal': 'Legal',
   'more.terms': 'Terms of service',
   'more.privacyPolicy': 'Privacy policy',
+  'more.refundPolicy': 'Refund policy',
   'more.dataDisclaimer': 'About your data',
   'more.dataDisclaimerTitle': 'How we handle your data',
   'more.dataDisclaimerBody': 'STACK does not ask for or store real banking data, card numbers, or passwords for your services. You manually enter how much you pay and how often. Your data is stored in your account and only you can view or delete it.',

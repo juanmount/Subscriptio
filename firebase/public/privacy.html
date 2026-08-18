@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STACK — Política de Privacidad</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0F0A1F; color: #E6E0F0; min-height: 100vh; padding: 40px 20px; }
+    .container { max-width: 640px; margin: 0 auto; }
+    .logo { font-size: 28px; font-weight: 800; letter-spacing: -1px; margin-bottom: 4px; background: linear-gradient(135deg, #9B7BFF, #6B52E0); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    h1 { font-size: 24px; margin: 24px 0 8px; color: #E6E0F0; }
+    h2 { font-size: 18px; margin: 28px 0 8px; color: #9B7BFF; }
+    p, li { font-size: 15px; line-height: 1.7; color: #C4BDD4; margin-bottom: 8px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    .updated { font-size: 13px; color: #6B6480; margin-bottom: 24px; }
+    .lang-switch { display: flex; gap: 8px; margin-bottom: 24px; }
+    .lang-switch a { padding: 6px 14px; border-radius: 20px; background: #1A1530; color: #9088B0; text-decoration: none; font-size: 13px; font-weight: 600; }
+    .lang-switch a.active { background: #6B52E0; color: #fff; }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+    .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #252045; color: #6B6480; font-size: 13px; text-align: center; }
+    a.back { color: #9B7BFF; text-decoration: none; font-size: 14px; }
+    strong { color: #E6E0F0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">STACK</div>
+    <a class="back" href="/">← Volver</a>
+
+    <div class="lang-switch">
+      <a href="#" class="active" onclick="switchLang('es',event)">Español</a>
+      <a href="#" onclick="switchLang('en',event)">English</a>
+      <a href="#" onclick="switchLang('pt',event)">Português</a>
+    </div>
+
+    <!-- ESPAÑOL -->
+    <div class="lang-section active" id="es">
+      <h1>Política de Privacidad</h1>
+      <p class="updated">Última actualización: 18 de agosto de 2025</p>
+
+      <h2>1. Datos que Recopilamos</h2>
+      <p>Cuando creás una cuenta en STACK, recopilamos:</p>
+      <ul>
+        <li><strong>Datos de autenticación:</strong> Tu email y nombre (provistos por Google o ingresados al registrarte).</li>
+        <li><strong>Datos de uso:</strong> Las suscripciones, tarjetas, categorías y configuraciones que cargás manualmente en la app.</li>
+        <li><strong>Datos analíticos:</strong> Eventos anónimos de uso (login, suscripción agregada, paywall) a través de Firebase Analytics para mejorar la app.</li>
+      </ul>
+
+      <h2>2. Datos que NO Recopilamos</h2>
+      <ul>
+        <li><strong>No</strong> solicitamos ni almacenamos datos bancarios.</li>
+        <li><strong>No</strong> pedimos números de tarjetas de crédito o débito.</li>
+        <li><strong>No</strong> solicitamos contraseñas de tus servicios (Netflix, Spotify, etc.).</li>
+        <li><strong>No</strong> accedemos a tu cuenta bancaria ni a procesadores de pago.</li>
+        <li><strong>No</strong> vendemos ni compartimos tus datos con terceros.</li>
+      </ul>
+
+      <h2>3. Cómo Almacenamos tus Datos</h2>
+      <p>Tus datos se almacenan en Supabase (PostgreSQL) con políticas de Row Level Security (RLS). Esto significa que <strong>solo vos</strong> podés acceder a tus datos. Otros usuarios no pueden ver tu información bajo ninguna circunstancia.</p>
+
+      <h2>4. Uso de Firebase Analytics</h2>
+      <p>Usamos Firebase Analytics para entender cómo los usuarios interactúan con la app. Los eventos son anónimos y no incluyen información personal identificable. Esto nos ayuda a mejorar la experiencia de uso.</p>
+
+      <h2>5. Autenticación con Google</h2>
+      <p>Si elegís iniciar sesión con Google, solicitamos acceso a tu nombre y email. No accedemos a tu correo, contactos, documentos ni ningún otro dato de tu cuenta de Google.</p>
+
+      <h2>6. Pagos</h2>
+      <p>El pago único de USD 9.99 se procesa a través de Google Play o Apple App Store. No almacenamos información de tarjetas ni de pago en nuestros servidores.</p>
+
+      <h2>7. Tus Derechos</h2>
+      <ul>
+        <li><strong>Acceso:</strong> Podés ver todos tus datos desde la app.</li>
+        <li><strong>Eliminación:</strong> Podés eliminar tu cuenta y todos tus datos desde Configuración → Eliminar datos.</li>
+        <li><strong>Portabilidad:</strong> Podés contactarnos para exportar tus datos.</li>
+      </ul>
+
+      <h2>8. Seguridad</h2>
+      <p>Usamos Row Level Security a nivel de base de datos, autenticación con Firebase Auth, y conexiones cifradas (HTTPS/TLS) para todas las comunicaciones.</p>
+
+      <h2>9. Menores</h2>
+      <p>STACK no está dirigido a menores de 13 años. No recopilamos intencionalmente datos de menores.</p>
+
+      <h2>10. Cambios a esta Política</h2>
+      <p>Podemos actualizar esta política en cualquier momento. Te notificaremos desde la app si hay cambios significativos.</p>
+
+      <h2>11. Contacto</h2>
+      <p>Para consultas sobre privacidad: <a href="mailto:soporte@stack-app.com" style="color:#9B7BFF">soporte@stack-app.com</a></p>
+    </div>
+
+    <!-- ENGLISH -->
+    <div class="lang-section" id="en">
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: August 18, 2025</p>
+
+      <h2>1. Data We Collect</h2>
+      <p>When you create a STACK account, we collect:</p>
+      <ul>
+        <li><strong>Authentication data:</strong> Your email and name (provided by Google or entered during registration).</li>
+        <li><strong>Usage data:</strong> Subscriptions, cards, categories, and settings you manually enter in the app.</li>
+        <li><strong>Analytics data:</strong> Anonymous usage events (login, subscription added, paywall) through Firebase Analytics to improve the app.</li>
+      </ul>
+
+      <h2>2. Data We Do NOT Collect</h2>
+      <ul>
+        <li>We do <strong>not</strong> request or store banking data.</li>
+        <li>We do <strong>not</strong> ask for credit or debit card numbers.</li>
+        <li>We do <strong>not</strong> request passwords for your services (Netflix, Spotify, etc.).</li>
+        <li>We do <strong>not</strong> access your bank account or payment processors.</li>
+        <li>We do <strong>not</strong> sell or share your data with third parties.</li>
+      </ul>
+
+      <h2>3. How We Store Your Data</h2>
+      <p>Your data is stored in Supabase (PostgreSQL) with Row Level Security (RLS) policies. This means <strong>only you</strong> can access your data. Other users cannot see your information under any circumstances.</p>
+
+      <h2>4. Firebase Analytics</h2>
+      <p>We use Firebase Analytics to understand how users interact with the app. Events are anonymous and do not include personally identifiable information. This helps us improve the user experience.</p>
+
+      <h2>5. Google Authentication</h2>
+      <p>If you choose to sign in with Google, we request access to your name and email. We do not access your mail, contacts, documents, or any other data from your Google account.</p>
+
+      <h2>6. Payments</h2>
+      <p>The one-time USD 9.99 payment is processed through Google Play or Apple App Store. We do not store card or payment information on our servers.</p>
+
+      <h2>7. Your Rights</h2>
+      <ul>
+        <li><strong>Access:</strong> You can view all your data from the app.</li>
+        <li><strong>Deletion:</strong> You can delete your account and all your data from Settings → Delete data.</li>
+        <li><strong>Portability:</strong> You can contact us to export your data.</li>
+      </ul>
+
+      <h2>8. Security</h2>
+      <p>We use database-level Row Level Security, Firebase Auth authentication, and encrypted connections (HTTPS/TLS) for all communications.</p>
+
+      <h2>9. Children</h2>
+      <p>STACK is not directed at children under 13. We do not knowingly collect data from minors.</p>
+
+      <h2>10. Changes to This Policy</h2>
+      <p>We may update this policy at any time. We will notify you through the app if there are significant changes.</p>
+
+      <h2>11. Contact</h2>
+      <p>For privacy inquiries: <a href="mailto:soporte@stack-app.com" style="color:#9B7BFF">soporte@stack-app.com</a></p>
+    </div>
+
+    <!-- PORTUGUÊS -->
+    <div class="lang-section" id="pt">
+      <h1>Política de Privacidade</h1>
+      <p class="updated">Última atualização: 18 de agosto de 2025</p>
+
+      <h2>1. Dados que Coletamos</h2>
+      <p>Quando você cria uma conta no STACK, coletamos:</p>
+      <ul>
+        <li><strong>Dados de autenticação:</strong> Seu e-mail e nome (fornecidos pelo Google ou inseridos durante o cadastro).</li>
+        <li><strong>Dados de uso:</strong> Assinaturas, cartões, categorias e configurações que você insere manualmente no app.</li>
+        <li><strong>Dados analíticos:</strong> Eventos anônimos de uso (login, assinatura adicionada, paywall) através do Firebase Analytics para melhorar o app.</li>
+      </ul>
+
+      <h2>2. Dados que NÃO Coletamos</h2>
+      <ul>
+        <li><strong>Não</strong> solicitamos nem armazenamos dados bancários.</li>
+        <li><strong>Não</strong> pedimos números de cartões de crédito ou débito.</li>
+        <li><strong>Não</strong> solicitamos senhas dos seus serviços (Netflix, Spotify, etc.).</li>
+        <li><strong>Não</strong> acessamos sua conta bancária nem processadores de pagamento.</li>
+        <li><strong>Não</strong> vendemos nem compartilhamos seus dados com terceiros.</li>
+      </ul>
+
+      <h2>3. Como Armazenamos seus Dados</h2>
+      <p>Seus dados são armazenados no Supabase (PostgreSQL) com políticas de Row Level Security (RLS). Isso significa que <strong>apenas você</strong> pode acessar seus dados. Outros usuários não podem ver suas informações sob nenhuma circunstância.</p>
+
+      <h2>4. Firebase Analytics</h2>
+      <p>Usamos Firebase Analytics para entender como os usuários interagem com o app. Os eventos são anônimos e não incluem informações pessoais identificáveis. Isso nos ajuda a melhorar a experiência de uso.</p>
+
+      <h2>5. Autenticação com Google</h2>
+      <p>Se você escolher entrar com Google, solicitamos acesso ao seu nome e e-mail. Não acessamos seu e-mail, contatos, documentos nem qualquer outro dado da sua conta Google.</p>
+
+      <h2>6. Pagamentos</h2>
+      <p>O pagamento único de USD 9.99 é processado através do Google Play ou Apple App Store. Não armazenamos informações de cartão ou pagamento em nossos servidores.</p>
+
+      <h2>7. Seus Direitos</h2>
+      <ul>
+        <li><strong>Acesso:</strong> Você pode ver todos os seus dados no app.</li>
+        <li><strong>Exclusão:</strong> Você pode excluir sua conta e todos os seus dados em Configurações → Excluir dados.</li>
+        <li><strong>Portabilidade:</strong> Você pode nos contatar para exportar seus dados.</li>
+      </ul>
+
+      <h2>8. Segurança</h2>
+      <p>Usamos Row Level Security em nível de banco de dados, autenticação com Firebase Auth e conexões criptografadas (HTTPS/TLS) para todas as comunicações.</p>
+
+      <h2>9. Menores</h2>
+      <p>O STACK não é direcionado a menores de 13 anos. Não coletamos intencionalmente dados de menores.</p>
+
+      <h2>10. Alterações nesta Política</h2>
+      <p>Podemos atualizar esta política a qualquer momento. Notificaremos você através do app se houver mudanças significativas.</p>
+
+      <h2>11. Contato</h2>
+      <p>Para dúvidas sobre privacidade: <a href="mailto:soporte@stack-app.com" style="color:#9B7BFF">soporte@stack-app.com</a></p>
+    </div>
+
+    <div class="footer">© 2025 STACK. All rights reserved.</div>
+  </div>
+
+  <script>
+    function switchLang(lang, e) {
+      e.preventDefault();
+      document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+      document.querySelectorAll('.lang-switch a').forEach(a => a.classList.remove('active'));
+      e.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>

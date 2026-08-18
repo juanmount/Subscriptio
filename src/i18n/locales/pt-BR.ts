@@ -218,6 +218,7 @@ export const ptBR = {
   'more.legal': 'Legal',
   'more.terms': 'Termos de serviço',
   'more.privacyPolicy': 'Política de privacidade',
+  'more.refundPolicy': 'Política de reembolso',
   'more.dataDisclaimer': 'Sobre seus dados',
   'more.dataDisclaimerTitle': 'Como tratamos seus dados',
   'more.dataDisclaimerBody': 'O STACK não pede nem guarda dados bancários reais, números de cartão ou senhas dos seus serviços. Você cadastra manualmente quanto paga e com que frequência. Seus dados ficam na sua conta e só você pode vê-los ou excluí-los.',

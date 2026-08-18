@@ -35,8 +35,9 @@ const CARD_SHADOW = {
 };
 
 // Placeholder URLs — replace with real hosted pages before store submission
-const TERMS_URL = 'https://stack-app.com/terms';
-const PRIVACY_URL = 'https://stack-app.com/privacy';
+const TERMS_URL = 'https://stack-5ec23.web.app/terms';
+const PRIVACY_URL = 'https://stack-5ec23.web.app/privacy';
+const REFUND_URL = 'https://stack-5ec23.web.app/refund';
 const APP_STORE_URL = 'https://apps.apple.com/app/stack/id0000000000';
 
 type SettingItem = {
@@ -189,6 +190,7 @@ export default function MasScreen() {
       items: [
         { icon: 'document-text-outline', iconBg: '#F0F0FF', iconColor: '#5050CC', label: t('more.terms'), onPress: () => Linking.openURL(TERMS_URL) },
         { icon: 'shield-checkmark-outline', iconBg: '#E5FFF5', iconColor: '#00875A', label: t('more.privacyPolicy'), onPress: () => Linking.openURL(PRIVACY_URL) },
+        { icon: 'cash-outline', iconBg: '#E5F4FF', iconColor: '#2B6ED4', label: t('more.refundPolicy'), onPress: () => Linking.openURL(REFUND_URL) },
         { icon: 'lock-closed-outline', iconBg: '#FFF8E5', iconColor: '#B07800', label: t('more.dataDisclaimer'), onPress: () => setShowDataDisclaimer(true) },
       ],
     },

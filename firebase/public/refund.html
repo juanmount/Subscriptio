@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STACK — Política de Reembolso</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0F0A1F; color: #E6E0F0; min-height: 100vh; padding: 40px 20px; }
+    .container { max-width: 640px; margin: 0 auto; }
+    .logo { font-size: 28px; font-weight: 800; letter-spacing: -1px; margin-bottom: 4px; background: linear-gradient(135deg, #9B7BFF, #6B52E0); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    h1 { font-size: 24px; margin: 24px 0 8px; color: #E6E0F0; }
+    h2 { font-size: 18px; margin: 28px 0 8px; color: #9B7BFF; }
+    p, li { font-size: 15px; line-height: 1.7; color: #C4BDD4; margin-bottom: 8px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    .updated { font-size: 13px; color: #6B6480; margin-bottom: 24px; }
+    .lang-switch { display: flex; gap: 8px; margin-bottom: 24px; }
+    .lang-switch a { padding: 6px 14px; border-radius: 20px; background: #1A1530; color: #9088B0; text-decoration: none; font-size: 13px; font-weight: 600; }
+    .lang-switch a.active { background: #6B52E0; color: #fff; }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+    .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #252045; color: #6B6480; font-size: 13px; text-align: center; }
+    a.back { color: #9B7BFF; text-decoration: none; font-size: 14px; }
+    strong { color: #E6E0F0; }
+    .highlight { background: #1A1530; border-radius: 12px; padding: 16px 20px; margin: 16px 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">STACK</div>
+    <a class="back" href="/">← Volver</a>
+
+    <div class="lang-switch">
+      <a href="#" class="active" onclick="switchLang('es',event)">Español</a>
+      <a href="#" onclick="switchLang('en',event)">English</a>
+      <a href="#" onclick="switchLang('pt',event)">Português</a>
+    </div>
+
+    <!-- ESPAÑOL -->
+    <div class="lang-section active" id="es">
+      <h1>Política de Reembolso</h1>
+      <p class="updated">Última actualización: 18 de agosto de 2025</p>
+
+      <div class="highlight">
+        <p><strong>Resumen:</strong> STACK tiene un pago único de USD 9.99. Si no estás conforme, te devolvemos el dinero dentro de los primeros 14 días.</p>
+      </div>
+
+      <h2>1. Período de Garantía</h2>
+      <p>Tenés <strong>14 días</strong> desde la fecha de compra para solicitar un reembolso completo, sin necesidad de justificar el motivo.</p>
+
+      <h2>2. Cómo Solicitar un Reembolso</h2>
+      <ul>
+        <li><strong>Android (Google Play):</strong> Abrí Google Play Store → Menú → Mis compras → Encontrá STACK → Solicitar reembolso. También podés solicitarlo desde <a href="https://play.google.com/store/account/orderhistory" style="color:#9B7BFF">play.google.com/store/account</a>.</li>
+        <li><strong>iOS (App Store):</strong> Abrí reportaproblem.apple.com → Iniciá sesión → Encontrá STACK → Solicitar reembolso.</li>
+        <li><strong>Email:</strong> También podés escribirnos a <a href="mailto:soporte@stack-app.com" style="color:#9B7BFF">soporte@stack-app.com</a> con tu comprobante de compra.</li>
+      </ul>
+
+      <h2>3. Procesamiento</h2>
+      <p>Los reembolsos se procesan a través de Google Play o Apple App Store. El tiempo de acreditación depende de tu método de pago (generalmente 3-5 días hábiles).</p>
+
+      <h2>4. Después del Reembolso</h2>
+      <p>Si recibís un reembolso, el acceso a las funcionalidades premium se desactivará. Tus datos no se eliminan automáticamente — podés eliminarlos desde la app o contactarnos para hacerlo.</p>
+
+      <h2>5. Compras por Error</h2>
+      <p>Si la compra fue accidental, contactanos dentro de los 14 días y procesamos el reembolso sin problemas.</p>
+
+      <h2>6. Contacto</h2>
+      <p>Para consultas sobre reembolsos: <a href="mailto:soporte@stack-app.com" style="color:#9B7BFF">soporte@stack-app.com</a></p>
+    </div>
+
+    <!-- ENGLISH -->
+    <div class="lang-section" id="en">
+      <h1>Refund Policy</h1>
+      <p class="updated">Last updated: August 18, 2025</p>
+
+      <div class="highlight">
+        <p><strong>Summary:</strong> STACK has a one-time payment of USD 9.99. If you're not satisfied, we'll refund you within the first 14 days.</p>
+      </div>
+
+      <h2>1. Guarantee Period</h2>
+      <p>You have <strong>14 days</strong> from the purchase date to request a full refund, no questions asked.</p>
+
+      <h2>2. How to Request a Refund</h2>
+      <ul>
+        <li><strong>Android (Google Play):</strong> Open Google Play Store → Menu → My purchases → Find STACK → Request refund. You can also request from <a href="https://play.google.com/store/account/orderhistory" style="color:#9B7BFF">play.google.com/store/account</a>.</li>
+        <li><strong>iOS (App Store):</strong> Open reportaproblem.apple.com → Sign in → Find STACK → Request refund.</li>
+        <li><strong>Email:</strong> You can also email us at <a href="mailto:soporte@stack-app.com" style="color:#9B7BFF">soporte@stack-app.com</a> with your purchase receipt.</li>
+      </ul>
+
+      <h2>3. Processing</h2>
+      <p>Refunds are processed through Google Play or Apple App Store. The crediting time depends on your payment method (usually 3-5 business days).</p>
+
+      <h2>4. After Refund</h2>
+      <p>If you receive a refund, access to premium features will be disabled. Your data is not automatically deleted — you can delete it from the app or contact us to do so.</p>
+
+      <h2>5. Accidental Purchases</h2>
+      <p>If the purchase was accidental, contact us within 14 days and we'll process the refund with no issues.</p>
+
+      <h2>6. Contact</h2>
+      <p>For refund inquiries: <a href="mailto:soporte@stack-app.com" style="color:#9B7BFF">soporte@stack-app.com</a></p>
+    </div>
+
+    <!-- PORTUGUÊS -->
+    <div class="lang-section" id="pt">
+      <h1>Política de Reembolso</h1>
+      <p class="updated">Última atualização: 18 de agosto de 2025</p>
+
+      <div class="highlight">
+        <p><strong>Resumo:</strong> O STACK tem um pagamento único de USD 9.99. Se você não estiver satisfeito, devolvemos seu dinheiro nos primeiros 14 dias.</p>
+      </div>
+
+      <h2>1. Período de Garantia</h2>
+      <p>Você tem <strong>14 dias</strong> a partir da data da compra para solicitar um reembolso completo, sem necessidade de justificar o motivo.</p>
+
+      <h2>2. Como Solicitar um Reembolso</h2>
+      <ul>
+        <li><strong>Android (Google Play):</strong> Abra Google Play Store → Menu → Minhas compras → Encontre STACK → Solicitar reembolso. Você também pode solicitar em <a href="https://play.google.com/store/account/orderhistory" style="color:#9B7BFF">play.google.com/store/account</a>.</li>
+        <li><strong>iOS (App Store):</strong> Abra reportaproblem.apple.com → Entre → Encontre STACK → Solicitar reembolso.</li>
+        <li><strong>E-mail:</strong> Você também pode nos enviar um e-mail para <a href="mailto:soporte@stack-app.com" style="color:#9B7BFF">soporte@stack-app.com</a> com seu comprovante de compra.</li>
+      </ul>
+
+      <h2>3. Processamento</h2>
+      <p>Os reembolsos são processados através do Google Play ou Apple App Store. O tempo de crédito depende do seu método de pagamento (geralmente 3-5 dias úteis).</p>
+
+      <h2>4. Após o Reembolso</h2>
+      <p>Se você receber um reembolso, o acesso aos recursos premium será desativado. Seus dados não são excluídos automaticamente — você pode excluí-los no app ou nos contatar para fazê-lo.</p>
+
+      <h2>5. Compras Acidentais</h2>
+      <p>Se a compra foi acidental, entre em contato dentro de 14 dias e processaremos o reembolso sem problemas.</p>
+
+      <h2>6. Contato</h2>
+      <p>Para dúvidas sobre reembolsos: <a href="mailto:soporte@stack-app.com" style="color:#9B7BFF">soporte@stack-app.com</a></p>
+    </div>
+
+    <div class="footer">© 2025 STACK. All rights reserved.</div>
+  </div>
+
+  <script>
+    function switchLang(lang, e) {
+      e.preventDefault();
+      document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+      document.querySelectorAll('.lang-switch a').forEach(a => a.classList.remove('active'));
+      e.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>
