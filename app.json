@@ -23,8 +23,7 @@
       "@react-native-google-signin/google-signin",
       "./plugins/withFirebaseNoSPM",
       "expo-localization",
-      "@react-native-firebase/analytics",
-      "react-native-purchases"
+      "@react-native-firebase/analytics"
     ],
     "experiments": {
       "typedRoutes": true
