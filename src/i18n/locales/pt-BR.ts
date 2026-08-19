@@ -223,6 +223,7 @@ export const ptBR = {
   'more.dataDisclaimerTitle': 'Como tratamos seus dados',
   'more.dataDisclaimerBody': 'O STACK não pede nem guarda dados bancários reais, números de cartão ou senhas dos seus serviços. Você cadastra manualmente quanto paga e com que frequência. Seus dados ficam na sua conta e só você pode vê-los ou excluí-los.',
   'more.restorePurchase': 'Restaurar compra',
+  'more.noPurchaseFound': 'Nenhuma compra anterior encontrada',
   'more.manageSubs': 'Gerenciar assinaturas do sistema',
   'more.manageSubsHint': 'Abra os ajustes do sistema para gerenciar suas assinaturas da App Store ou Play Store',
   'more.deleteAccount': 'Fechar conta',

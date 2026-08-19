@@ -23,6 +23,7 @@ import { t, getLocale, setLocale, savePreferredLocale, type AppLocale } from '@/
 import { usePriceWatchStore } from '@/services/priceWatchStore';
 import { useAuthStore } from '@/services/authStore';
 import { usePaywallStore } from '@/services/paywallStore';
+import { restorePurchases } from '@/services/revenueCatService';
 import { listSubscriptions } from '@/data/repositories/subscriptions';
 import { supabase, getSupabaseAuthUid } from '@/services/supabaseClient';
 
@@ -145,8 +146,17 @@ export default function MasScreen() {
   };
 
   const handleRestorePurchase = async () => {
-    await checkPaidStatus();
-    Alert.alert(t('more.restorePurchase'), isPaid ? '✓' : t('more.comingSoon'));
+    try {
+      const restored = await restorePurchases();
+      if (restored) {
+        await checkPaidStatus();
+        Alert.alert(t('more.restorePurchase'), '✓');
+      } else {
+        Alert.alert(t('more.restorePurchase'), t('more.noPurchaseFound'));
+      }
+    } catch {
+      Alert.alert(t('more.restorePurchase'), t('more.noPurchaseFound'));
+    }
   };
 
   const handleManageSubs = () => {

@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { supabase, getSupabaseAuthUid } from './supabaseClient';
 import { logPaywallPurchased, logPaywallShown, logPaywallDismissed } from './analytics';
+import { checkEntitlement } from './revenueCatService';
 
 const IS_PAID_KEY = 'is_paid';
 
@@ -36,6 +37,11 @@ export const usePaywallStore = create<PaywallState>((set) => ({
     const uid = getSupabaseAuthUid();
     if (!uid) {
       set({ isPaid: false, loading: false });
+      return;
+    }
+    const rcPaid = await checkEntitlement().catch(() => false);
+    if (rcPaid) {
+      set({ isPaid: true, loading: false });
       return;
     }
     const { data } = await supabase

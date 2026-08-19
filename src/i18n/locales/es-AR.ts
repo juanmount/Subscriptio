@@ -223,6 +223,7 @@ export const esAR = {
   'more.dataDisclaimerTitle': 'Cómo tratamos tus datos',
   'more.dataDisclaimerBody': 'STACK no pide ni guarda datos bancarios reales, números de tarjeta ni contraseñas de tus servicios. Cargás vos manualmente cuánto pagás y cada cuándo. Tus datos se guardan en tu cuenta y solo vos podés verlos o borrarlos.',
   'more.restorePurchase': 'Restaurar compra',
+  'more.noPurchaseFound': 'No se encontró ninguna compra anterior',
   'more.manageSubs': 'Gestionar suscripciones del sistema',
   'more.manageSubsHint': 'Abrí los ajustes del sistema para gestionar tus suscripciones de App Store o Play Store',
   'more.deleteAccount': 'Cerrar cuenta',

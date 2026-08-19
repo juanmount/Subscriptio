@@ -14,6 +14,8 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { Colors, Spacing, Typography, Radius } from '@/ui/theme';
 import { t } from '@/i18n';
 import { usePaywallStore } from '@/services/paywallStore';
+import { purchasePremium } from '@/services/revenueCatService';
+import { logPaywallPurchased } from '@/services/analytics';
 
 interface PaywallModalProps {
   visible: boolean;
@@ -31,12 +33,20 @@ export function PaywallModal({ visible, subCount, usdMonthly, localMonthly, loca
 
   const handlePay = async () => {
     setProcessing(true);
-    // TODO: Replace with RevenueCat purchase flow
-    // For now, simulate a successful purchase
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    await markAsPaid();
-    setProcessing(false);
-    onClose();
+    try {
+      const success = await purchasePremium();
+      if (success) {
+        await markAsPaid();
+        await logPaywallPurchased();
+        onClose();
+      }
+    } catch (e: any) {
+      if (!e.userCancelled) {
+        console.error('[Purchase]', e);
+      }
+    } finally {
+      setProcessing(false);
+    }
   };
 
   return (

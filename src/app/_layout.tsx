@@ -9,6 +9,7 @@ import { usePathname } from 'expo-router';
 import { runSeedIfNeeded } from '@/data/seed/supabase-seed';
 import { loadCurrencies } from '@/data/repositories/currencies';
 import { loadPreferredLocale, setLocale } from '@/i18n';
+import { initRevenueCat } from '@/services/revenueCatService';
 
 function AuthGate({ children }: { children: React.ReactNode }) {
   const { user, isInitialized, init } = useAuthStore();
@@ -47,6 +48,7 @@ function AuthGate({ children }: { children: React.ReactNode }) {
 }
 
 export default function RootLayout() {
+  useEffect(() => { initRevenueCat(); }, []);
   return (
     <SafeAreaProvider>
       <AuthGate>
