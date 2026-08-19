@@ -7,14 +7,14 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1098265338774:android:e55a4bfb66a5da8992f3b7",
+        "mobilesdk_app_id": "1:1098265338774:android:3188b8c656442e5b92f3b7",
         "android_client_info": {
           "package_name": "app.getstack.stack"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1098265338774-pk37hl31me242lhbjtpm45dv6bj88fgc.apps.googleusercontent.com",
+          "client_id": "1098265338774-agnierqkmsli4507gqti61r8ccma98do.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "app.getstack.stack",
@@ -42,7 +42,51 @@
               "client_id": "1098265338774-c2mc4nmvrl629r9rs6as56fu8rohf0d5.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "app.getstack.stack"
+                "bundle_id": "com.stack.app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1098265338774:android:e55a4bfb66a5da8992f3b7",
+        "android_client_info": {
+          "package_name": "com.stack.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1098265338774-pk37hl31me242lhbjtpm45dv6bj88fgc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stack.app",
+            "certificate_hash": "756a619d572c24a5686c425829cbce1a36cea41d"
+          }
+        },
+        {
+          "client_id": "1098265338774-imma5e7f75vjba56nrgug6bo66inefka.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsK9JC0qe_0pbBSyJtVkPDittXwOztU1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1098265338774-imma5e7f75vjba56nrgug6bo66inefka.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1098265338774-c2mc4nmvrl629r9rs6as56fu8rohf0d5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.stack.app"
               }
             }
           ]
