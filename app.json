@@ -30,11 +30,11 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.stack.app",
+      "bundleIdentifier": "app.getstack.stack",
       "googleServicesFile": "./GoogleService-Info.plist"
     },
     "android": {
-      "package": "com.stack.app",
+      "package": "app.getstack.stack",
       "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",

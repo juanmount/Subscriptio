@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:1098265338774:android:e55a4bfb66a5da8992f3b7",
         "android_client_info": {
-          "package_name": "com.stack.app"
+          "package_name": "app.getstack.stack"
         }
       },
       "oauth_client": [
@@ -17,7 +17,7 @@
           "client_id": "1098265338774-pk37hl31me242lhbjtpm45dv6bj88fgc.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.stack.app",
+            "package_name": "app.getstack.stack",
             "certificate_hash": "756a619d572c24a5686c425829cbce1a36cea41d"
           }
         },
@@ -42,7 +42,7 @@
               "client_id": "1098265338774-c2mc4nmvrl629r9rs6as56fu8rohf0d5.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.stack.app"
+                "bundle_id": "app.getstack.stack"
               }
             }
           ]
