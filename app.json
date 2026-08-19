@@ -31,7 +31,10 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "app.getstack.stack",
-      "googleServicesFile": "./GoogleService-Info.plist"
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "package": "app.getstack.stack",
