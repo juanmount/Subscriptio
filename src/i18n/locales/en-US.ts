@@ -264,7 +264,7 @@ export const enUS = {
   'paywall.annualLabel': 'Per year',
   'paywall.sellTitle': 'To keep seeing it',
   'paywall.sellBody': 'Pay once and STACK keeps tracking your spending month after month, with renewal dates, price change alerts and your X-ray always at hand.',
-  'paywall.price': '$9.99',
+  'paywall.price': '$4.99',
   'paywall.priceNote': 'One-time payment. No subscription. No renewals.',
   'paywall.cta': 'Pay and unlock',
   'paywall.skip': 'Not now',

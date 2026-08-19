@@ -264,7 +264,7 @@ export const esAR = {
   'paywall.annualLabel': 'Por año',
   'paywall.sellTitle': 'Para seguir viéndolo',
   'paywall.sellBody': 'Pagás una vez y STACK sigue trackeando tus gastos mes a mes, con fechas de renovación, alertas de cambios de precio y tu radiografía siempre a mano.',
-  'paywall.price': 'US$ 9.99',
+  'paywall.price': 'US$ 4.99',
   'paywall.priceNote': 'Pago único. Sin suscripción. Sin renovaciones.',
   'paywall.cta': 'Pagar y desbloquear',
   'paywall.skip': 'Ahora no',

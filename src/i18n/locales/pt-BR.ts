@@ -264,7 +264,7 @@ export const ptBR = {
   'paywall.annualLabel': 'Por ano',
   'paywall.sellTitle': 'Para continuar vendo',
   'paywall.sellBody': 'Pague uma vez e o STACK continua rastreando seus gastos mês a mês, com datas de renovação, alertas de mudanças de preço e sua radiografia sempre à mão.',
-  'paywall.price': 'US$ 9.99',
+  'paywall.price': 'US$ 4.99',
   'paywall.priceNote': 'Pagamento único. Sem assinatura. Sem renovações.',
   'paywall.cta': 'Pagar e desbloquear',
   'paywall.skip': 'Agora não',
